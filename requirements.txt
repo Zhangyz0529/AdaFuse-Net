@@ -1,38 +1,10 @@
-# Core deep learning
-torch==2.1.2+cu121
-torchvision==0.16.2+cu121
-
-# Data processing & numerical
+torch==2.1.2
 numpy==1.26.4
-pandas==2.3.3
 scipy==1.13.1
 scikit-learn==1.2.2
-
-# Visualization
-matplotlib==3.7.3
-seaborn==0.13.2
-
-# Hyperparameter optimization
+pandas==2.3.3
 optuna==4.6.0
-pyyaml==6.0.2
-
-# Imbalanced learning
-imbalanced-learn==0.12.4
-
-# Network traffic processing
-scapy==2.6.1
 dpkt==1.9.8
-pyshark==0.6
-nfstream==6.5.3
-cicflowmeter==0.1.6
-
-# Model analysis & interpretability
-shap==0.48.0
-ptflops==0.7.5
-torchinfo==1.8.0
-
-# Image processing (if used in your pipeline)
-opencv-python==4.11.0.86
-
-# Progress bars
+PyYAML==6.0.2
 tqdm==4.66.5
+scapy==2.6.1

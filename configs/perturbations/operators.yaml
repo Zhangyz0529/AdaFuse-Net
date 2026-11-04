@@ -1,0 +1,7 @@
+operators: [Clean, INP, IBP, RTO, CTO, Gaussian, Joint]
+rhos: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+constant_tail_byte: 255
+sequence_length: 512
+noise_seed: 20261028
+joint_preserve_prefix: 0
+# Prefix54 is a separate explicitly selected historical protocol; never implicit.

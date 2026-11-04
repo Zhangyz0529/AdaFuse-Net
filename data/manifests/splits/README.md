@@ -1,0 +1,1 @@
+Generated locally before training. Manifests retain raw input hash, split seed, per-round scaler and role indices. Only sample-index independence is certified by the legacy manager; native canonical-group and IoT raw-block protocols are explicitly separate. No historical sample IDs are distributed.

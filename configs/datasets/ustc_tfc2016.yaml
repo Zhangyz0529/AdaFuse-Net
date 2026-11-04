@@ -1,0 +1,30 @@
+stat_dim: 25
+normal_label: Benign
+attack_classes:
+- Htbot
+- Neris
+- Miuref
+- Virut
+benign_mapping:
+- BitTorrent
+- Facetime
+- FTP
+- Gmail
+- MySQL
+- Outlook
+- Skype
+- SMB
+- Weibo
+- WorldOfWarcraft
+name: USTC
+input: data/processed/ustc_tfc2016/dataset.pkl
+sequence_length: 512
+split_seed: 42
+split_protocol: class_rotate
+normal_split_ratios:
+- 0.6
+- 0.2
+- 0.2
+novel_classes_per_round: 1
+round_val_novel_classes: 1
+min_query_num: 15

@@ -1,0 +1,26 @@
+dataset_config: configs/datasets/cic_ids2017.yaml
+output: results/cic_ids2017
+device: cpu
+training_seed: 42
+episode_seed: 42
+noise_seed: 20261028
+shots:
+- 1
+- 10
+updates: 50
+episodes: 100
+query_per_class: 15
+embed_dim: 256
+lr: 0.00034175442135711044
+weight_decay: 0.0004037481099025802
+temperature: 0.1594433459844592
+lambda_scl: 0.8381459098105098
+lambda_regularizer: 0.006117688080773715
+use_adef: true
+use_gating: true
+use_dec: true
+variant: Denoising-Reconstruction
+distance: squared_euclidean
+training_noise: alternating_INP_IBP
+reconstruction_weight: 0.1
+seed_per_update: true
