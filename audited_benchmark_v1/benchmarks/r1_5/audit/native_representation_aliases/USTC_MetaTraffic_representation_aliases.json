@@ -1,0 +1,164 @@
+{
+  "dataset": "USTC",
+  "method": "MetaTraffic",
+  "scope": "only records used by frozen plans; source/session separation established by upstream gate; this checks native feature aliases",
+  "interpretation": "feature collisions are not automatically evidence of shared source/session; do not claim zero exact native input overlap when reported nonzero",
+  "folds": [
+    {
+      "fold": "round0",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 273
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 249
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 364
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 343
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 409
+        }
+      }
+    },
+    {
+      "fold": "round1",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 251
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 287
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 356
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 383
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 357
+        }
+      }
+    },
+    {
+      "fold": "round2",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 269
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 252
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 352
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 263
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 381
+        }
+      }
+    },
+    {
+      "fold": "round3",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 250
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 268
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 355
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 389
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 247
+        }
+      }
+    }
+  ]
+}

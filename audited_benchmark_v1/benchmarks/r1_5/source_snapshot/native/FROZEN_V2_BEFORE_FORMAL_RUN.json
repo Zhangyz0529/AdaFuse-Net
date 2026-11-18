@@ -1,0 +1,11 @@
+{
+  "time": 1794929529.2684724,
+  "user_skip": "Pre-Contrast",
+  "source_freeze_sha256": "034768b47694359e4527ba5a3b830dc09ba0751e56ef8633d897874cd538b9f4",
+  "smoke_required": [
+    "FlowPic",
+    "MetaTraffic",
+    "Trafficformer-Light"
+  ],
+  "no_final_test_selection": true
+}

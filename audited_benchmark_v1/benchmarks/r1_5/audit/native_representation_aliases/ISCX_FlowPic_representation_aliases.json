@@ -1,0 +1,203 @@
+{
+  "dataset": "ISCX",
+  "method": "FlowPic",
+  "scope": "only records used by frozen plans; source/session separation established by upstream gate; this checks native feature aliases",
+  "interpretation": "feature collisions are not automatically evidence of shared source/session; do not claim zero exact native input overlap when reported nonzero",
+  "folds": [
+    {
+      "fold": "round0",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 59
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 31
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 35
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 52
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 40
+        }
+      }
+    },
+    {
+      "fold": "round1",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 32
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 29
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 53
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 61
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 56
+        }
+      }
+    },
+    {
+      "fold": "round2",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 37
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 54
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 39
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 26
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 59
+        }
+      }
+    },
+    {
+      "fold": "round3",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 34
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 32
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 34
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 20
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 29
+        }
+      }
+    },
+    {
+      "fold": "round4",
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 34
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 30
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "sample_id_intersection": 0,
+          "representation_hash_intersection": 34
+        }
+      ],
+      "support_query": {
+        "Val": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 43
+        },
+        "Test": {
+          "sample_id_intersection": 0,
+          "feature_hash_intersection": 24
+        }
+      }
+    }
+  ]
+}

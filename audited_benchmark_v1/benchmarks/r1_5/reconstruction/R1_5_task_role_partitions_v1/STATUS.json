@@ -1,0 +1,26 @@
+{
+  "time": 1794921840.5614676,
+  "pid": 2,
+  "active": [
+    "CIC_IDS"
+  ],
+  "waiting": {
+    "CIC_DDOS": {
+      "completed": 0,
+      "expected": 2
+    },
+    "CIC_DOH": "No frozen formal source plan for CIC_DOH"
+  },
+  "finished": {
+    "USTC": {
+      "returncode": 1,
+      "report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/partitions/USTC/PARTITION_GATE.json"
+    },
+    "ISCX": {
+      "returncode": 0,
+      "report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/partitions/ISCX/PARTITION_GATE.json"
+    }
+  },
+  "training_started": false,
+  "optuna_started": false
+}

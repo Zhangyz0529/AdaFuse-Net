@@ -1,0 +1,18 @@
+{
+  "mixed_supervisor": {
+    "pid": 1058729,
+    "command": "/home/zzu/.conda/envs/zyz_env/bin/python -u /home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/launch.py --data-root /home/zzu/zyz_workspace/TNSM/data ",
+    "signal": "SIGSTOP",
+    "state": "T (stopped)"
+  },
+  "CIC_DDOS": {
+    "pid": 1058864,
+    "command": "/home/zzu/.conda/envs/zyz_env/bin/python -u /home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/run.py --data-root /home/zzu/zyz_workspace/TNSM/data --dataset CIC_DDOS --domain Test_Day_03-11 ",
+    "signal": "SIGSTOP",
+    "state": "T (stopped)"
+  },
+  "time": 1794911698.866866,
+  "reason": "User requested CIC_IDS priority and CIC_DDOS pause",
+  "resume_policy": "Automatic SIGCONT after all five CIC_IDS source rebuilds finish with closed counts; authorized by latest user instruction",
+  "scientific_protocol_unchanged": true
+}

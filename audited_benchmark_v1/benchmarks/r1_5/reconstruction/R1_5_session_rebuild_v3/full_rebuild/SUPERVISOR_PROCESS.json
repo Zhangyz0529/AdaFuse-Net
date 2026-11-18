@@ -1,0 +1,11 @@
+{
+  "pid": 1058729,
+  "command": [
+    "/home/zzu/.conda/envs/zyz_env/bin/python",
+    "-u",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/launch.py",
+    "--data-root",
+    "/home/zzu/zyz_workspace/TNSM/data"
+  ],
+  "start_time": 1794907401.3939655
+}

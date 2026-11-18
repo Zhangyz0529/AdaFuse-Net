@@ -1,0 +1,92 @@
+[
+  {
+    "dataset": "CIC_IDS",
+    "acquisition_family": "Monday",
+    "provenance_domain_id": "c5095d98fc7780b970009e55f7e432add3672a9e9487101dc90b5beda55f5ee5",
+    "source_files": 1,
+    "archive_metadata": [],
+    "basis": "single named working-day capture and paired day CSVs",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_IDS",
+    "acquisition_family": "Tuesday",
+    "provenance_domain_id": "6fa20267535447d17ffceacd7ef6c1e12a8584132c56adb588bd2f16fbd2e056",
+    "source_files": 1,
+    "archive_metadata": [],
+    "basis": "single named working-day capture and paired day CSVs",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_IDS",
+    "acquisition_family": "Wednesday",
+    "provenance_domain_id": "3d4033e63becb9b88e761b1302c8e4639c0b36b5ce51abd1953636b87280ce97",
+    "source_files": 1,
+    "archive_metadata": [],
+    "basis": "single named working-day capture and paired day CSVs",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_IDS",
+    "acquisition_family": "Thursday",
+    "provenance_domain_id": "c987902f36ba00736559550ac6fcd70e9799ab57788770d6f85059e82c11a0b3",
+    "source_files": 1,
+    "archive_metadata": [],
+    "basis": "single named working-day capture and paired day CSVs",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_IDS",
+    "acquisition_family": "Friday",
+    "provenance_domain_id": "f8f4047f354451da3e4723a1d17c3f584d8bb44fbec7759d72d57ee4fb33e694",
+    "source_files": 1,
+    "archive_metadata": [],
+    "basis": "single named working-day capture and paired day CSVs",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_DDOS",
+    "acquisition_family": "Test_Day_03-11",
+    "provenance_domain_id": "63804fcc64130fbea5e8d6fc7bae15c79183d65d72253298e3c555d24ed2fe4d",
+    "source_files": 146,
+    "archive_metadata": [
+      {
+        "path": "CIC-DDoS-2019/Test_Day_03-11/PCAPs/PCAP-03-11.zip",
+        "central_directory_metadata_sha256": "03682eec7f32a7d678090212adca4920c8521fe026ce316b17ef2faf691e76bc",
+        "members": 146
+      }
+    ],
+    "basis": "same local acquisition-day directory; contiguous archive member series; raw timestamp metadata available for review",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  },
+  {
+    "dataset": "CIC_DDOS",
+    "acquisition_family": "Train_Day_01-12",
+    "provenance_domain_id": "4766b7d66a3251609b80efb267b59582b39099ae315b61b58ef0894f566dfbd5",
+    "source_files": 819,
+    "archive_metadata": [
+      {
+        "path": "CIC-DDoS-2019/Train_Day_01-12/PCAPs/PCAP-01-12_0-0249.zip",
+        "central_directory_metadata_sha256": "576b3bdf9ab5e186b1335f4023602540fe1515fcb6abfa9a987c3f7905b47077",
+        "members": 250
+      },
+      {
+        "path": "CIC-DDoS-2019/Train_Day_01-12/PCAPs/PCAP-01-12_0250-0499.zip",
+        "central_directory_metadata_sha256": "1d222262452b427b10f4543961a7e49fb314f4ffed4f826b1b8bdf00df917b39",
+        "members": 250
+      },
+      {
+        "path": "CIC-DDoS-2019/Train_Day_01-12/PCAPs/PCAP-01-12_0500-0749.zip",
+        "central_directory_metadata_sha256": "6da75bb2d742792f2cb19bcd19be519b0bd7713f48b442e63a145fb0793ed12c",
+        "members": 250
+      },
+      {
+        "path": "CIC-DDoS-2019/Train_Day_01-12/PCAPs/PCAP-01-12_0750-0818.zip",
+        "central_directory_metadata_sha256": "4a4a3fbedb28d0a4e4a9e7095a5f219b68d1459180c2f5f6610158edd8e0dae1",
+        "members": 69
+      }
+    ],
+    "basis": "same local acquisition-day directory; contiguous archive member series; raw timestamp metadata available for review",
+    "limitation": "acquisition-domain registry, not independent publisher authentication or application-session truth"
+  }
+]

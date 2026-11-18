@@ -1,0 +1,10 @@
+{
+  "selected_completed_runs": 2050,
+  "expected": 2240,
+  "partial_results": true,
+  "aggregation": "episode mean -> equal fold mean per seed -> seed mean/sample SD",
+  "unit": "F1 0..1; multiply 100 for percent/pp",
+  "RF": "seeds are estimator repeats",
+  "FlowPic_MetaTraffic": "Clean only; IBP30 not applicable to native size/time input",
+  "notes": "AttackRecall denotes target-class recall for ISCX, not a malicious-traffic claim. Incomplete methods must not receive unqualified full-benchmark ranking."
+}

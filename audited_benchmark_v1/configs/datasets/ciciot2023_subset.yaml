@@ -1,0 +1,17 @@
+name: CICIoT2023
+input: data/processed/ciciot2023/ciciov_multimodal_512.pkl
+stat_dim: 39
+normal_label: BENIGN
+attack_classes:
+- DDoS-SYN_Flood
+- DictionaryBruteForce
+- Mirai-udpplain
+- Recon-PortScan
+sequence_length: 512
+split_seed: 42
+split_protocol: packet_block_internal
+split_indices: data/processed/ciciot2023/split_indices_seed42.npz
+normal_split_ratios:
+- 0.7
+- 0.15
+- 0.15

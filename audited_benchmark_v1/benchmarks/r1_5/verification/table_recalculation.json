@@ -1,0 +1,10 @@
+{
+  "scope": "regenerated from all copied completed-run episode metrics, not checkpoint inference or retraining",
+  "selected_completed_runs": 2050,
+  "exact_file_matches": {
+    "per_task_seed_condition.csv": true,
+    "per_seed_condition.csv": true,
+    "mean_sampleSD.csv": true
+  },
+  "passed": true
+}

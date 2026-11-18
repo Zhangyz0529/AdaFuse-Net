@@ -1,0 +1,35 @@
+{
+  "checked_epoch": 1794929893.3069103,
+  "CIC_DDOS": {
+    "formal_training_usable": false,
+    "source_stage": {
+      "stage": "csv_ingest",
+      "pid": 1198530,
+      "time": 1794929883.7342756,
+      "training_started": false,
+      "csv_rows": 15676613,
+      "valid_rows": 15675453,
+      "file": "Syn.csv"
+    },
+    "required": "both source days rebuilt plus formal partition PASS"
+  },
+  "CIC_DOH": {
+    "formal_training_usable": false,
+    "stage": "ANCHOR_EVIDENCE_COMPLETE_NOT_FORMAL_REBUILD",
+    "anchor_metadata_counts": {
+      "unique_metadata_anchor": 295,
+      "ambiguous_metadata": 16,
+      "no_metadata_window": 9
+    },
+    "source_domains": 41,
+    "contradictory_anchor_evidence": 8,
+    "remaining": [
+      "certify domain boundaries and complete raw search coverage",
+      "freeze supported per-domain byte/time definitions from sufficient anchors",
+      "implement and verify all-row29-dimension label/window matching",
+      "run final session/content grouping and partition gate"
+    ],
+    "formal_acceptance_allowed": false
+  },
+  "queue_rule": "automatic enrollment only after formal dataset gate PASS; native input contracts/smoke additionally required"
+}

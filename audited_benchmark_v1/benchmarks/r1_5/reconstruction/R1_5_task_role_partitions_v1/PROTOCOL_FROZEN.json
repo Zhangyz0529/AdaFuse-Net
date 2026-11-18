@@ -1,0 +1,91 @@
+{
+  "version": "task_role_v1",
+  "frozen_at": 1794920456.6887815,
+  "change_reason": "ISCX source-count feasibility:68 target samples cannot satisfy arbitrary150 total; restore class-disjoint role assignment with intact groups",
+  "prior_failed_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/partitions/ISCX/PARTITION_GATE.json",
+  "no_model_scores_or_training_used": true,
+  "not_external_preregistration": true,
+  "policy": {
+    "version": "task_role_v1",
+    "amendment": "source-count feasibility, before any model training; preserve old global-split failure reports",
+    "partition_assignment": "attack/target components assigned whole to their fold role; reference-only components use60/20/20; conflicting-role components all excluded",
+    "ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "split_seed": 42,
+    "pool_seed": 3407,
+    "episode_seed": 3407,
+    "minimum_samples_per_partition_class": 25,
+    "minimum_components_per_class": 2,
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "query_per_class": 15,
+    "evaluation_episodes_per_task_shot": 100,
+    "calibration_pool": "none; no calibration used; no fitted decision threshold in preparation",
+    "outer_tasks": "registry target Test; next target Val; remaining targets Train; dataset reference in all roles with disjoint groups",
+    "grouping": "session, conservative same-domain bidirectional tuple, exact model input, identical raw packet content, explicit uncertain-continuation edges",
+    "blocked_domains": "excluded by fixed source-evidence rule only; named in scope table; never by model score",
+    "no_seed_retries": true,
+    "training_allowed": false
+  },
+  "classes": {
+    "CIC_IDS": [
+      "BENIGN",
+      "PortScan",
+      "DDoS",
+      "FTP-Patator",
+      "SSH-Patator",
+      "DoS"
+    ],
+    "CIC_DDOS": [
+      "BENIGN",
+      "Syn",
+      "DrDoS_MSSQL",
+      "DrDoS_NetBIOS",
+      "DrDoS_UDP",
+      "UDP-lag"
+    ],
+    "USTC": [
+      "Benign",
+      "Htbot",
+      "Neris",
+      "Miuref",
+      "Virut"
+    ],
+    "ISCX": [
+      "facebook_audio4",
+      "vpn_bittorrent",
+      "vpn_hangouts_audio2",
+      "vpn_facebook_audio2",
+      "vpn_email2b",
+      "vpn_ftps_a"
+    ],
+    "CIC_DOH": [
+      "Benign",
+      "dns2tcp",
+      "dnscat2",
+      "iodine"
+    ]
+  },
+  "dimensions": {
+    "CIC_IDS": 77,
+    "CIC_DDOS": 77,
+    "USTC": 25,
+    "ISCX": 25,
+    "CIC_DOH": 29
+  },
+  "code_sha256": {
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/prepare.py": "39da10c5416a97d7bc20f405883603344596e57dee2bb82291d03cea2540b4d9",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/test_roles.py": "dac26e2680bec387d476c3ea6744855dfae23c8e504ecb02e25cc95aa7209720",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/common.py": "71762af140076364055061d36c959fdb975ceb51f457e4b33ca051434f382264",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/role_assignment.py": "a500a9f0339f908eb5d6c483fd5c3f470a2c7ba2e479d4dc215b2bc863c4019d",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/watch.py": "46fa3885dcfafc704c65eb33258b4f7541ded73bc738a04a9a88ac496384d1b1"
+  },
+  "training_allowed": false
+}

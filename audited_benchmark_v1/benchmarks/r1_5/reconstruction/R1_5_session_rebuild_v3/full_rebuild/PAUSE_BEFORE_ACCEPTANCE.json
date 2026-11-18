@@ -1,0 +1,9 @@
+{
+  "time": 1794907258.2458568,
+  "supervisor": 1053402,
+  "workers": [
+    1053473,
+    1053474
+  ],
+  "reason": "equivalent indexed window search; no formal acceptance generated"
+}

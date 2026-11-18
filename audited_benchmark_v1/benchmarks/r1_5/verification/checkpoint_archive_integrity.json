@@ -1,0 +1,68 @@
+{
+  "archives": [
+    {
+      "file": "adafuse_cic_ids_seed123_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_cic_ids_seed2026_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_cic_ids_seed3407_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_cic_ids_seed42_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_cic_ids_seed5678_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_iscx_seed123_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_iscx_seed2026_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_iscx_seed3407_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_iscx_seed42_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_iscx_seed5678_v1.tar.gz",
+      "checkpoints": 20
+    },
+    {
+      "file": "adafuse_ustc_seed123_v1.tar.gz",
+      "checkpoints": 16
+    },
+    {
+      "file": "adafuse_ustc_seed2026_v1.tar.gz",
+      "checkpoints": 16
+    },
+    {
+      "file": "adafuse_ustc_seed3407_v1.tar.gz",
+      "checkpoints": 16
+    },
+    {
+      "file": "adafuse_ustc_seed42_v1.tar.gz",
+      "checkpoints": 16
+    },
+    {
+      "file": "adafuse_ustc_seed5678_v1.tar.gz",
+      "checkpoints": 16
+    }
+  ],
+  "total_checkpoints": 280,
+  "unique_checkpoint_paths": 280,
+  "passed": true,
+  "scope": "all15 checkpoint archives parsed; checkpoint/config presence and archive readability; not all-run model inference"
+}

@@ -1,0 +1,80 @@
+{
+  "cridex": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Cridex.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Cridex.pcap",
+      "label": "Cridex",
+      "file_id": "d3241a87ab62cafccaaa8b12952a6a5a296a782c0c894d9de044629d5aea91de",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Cridex.pcap",
+      "original_sha256": "b5bfc716b7f875b8c4cd749874850c672b2b4f12b101b2016622a1cc0eb94da1",
+      "original_bytes": 99353677,
+      "sha256": "b5bfc716b7f875b8c4cd749874850c672b2b4f12b101b2016622a1cc0eb94da1",
+      "provenance_domain_id": "4694b63b28dcd85a122d3e37d5f1f0a18a776a9dd5ddf9f1bd4c97e1cf561fef"
+    }
+  ],
+  "geodo": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Geodo.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Geodo.pcap",
+      "label": "Geodo",
+      "file_id": "9a3cc52ba16fcb9837b1ab90d8ad6e07b71529700b2acd15c8df3968a9205d57",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Geodo.pcap",
+      "original_sha256": "448fdf2fe393dce570a694bc70e0147c9c3a8877e9abd28ab306c401d6f200a4",
+      "original_bytes": 30271627,
+      "sha256": "448fdf2fe393dce570a694bc70e0147c9c3a8877e9abd28ab306c401d6f200a4",
+      "provenance_domain_id": "52a7618229c68d0c4bb2ff4f8f56b91d5d2c197317fd358d8c2d742bb308469a"
+    }
+  ],
+  "htbot": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Htbot.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Htbot.pcap",
+      "label": "Htbot",
+      "file_id": "bd575f6d15b9a3204e7fdd042c4e22a959f6511b4c0b599b4d8d9510232ef217",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Htbot.pcap",
+      "original_sha256": "cf6b9a726cd3dcb1518ffceb0568961ac0e813efa26bd6aaad0beadb0cf912c4",
+      "original_bytes": 87674586,
+      "sha256": "cf6b9a726cd3dcb1518ffceb0568961ac0e813efa26bd6aaad0beadb0cf912c4",
+      "provenance_domain_id": "abb794301328c5cb9f81a965f26320912b02820415b917ed00edfe6bc281bc1b"
+    }
+  ],
+  "miuref": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Miuref.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Miuref.pcap",
+      "label": "Miuref",
+      "file_id": "c33c742f8000eb7a275dd8c47e9df983f7054d20e59e74c350e79756f63aa4f5",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Miuref.pcap",
+      "original_sha256": "ec2476c9fb34a202b11d1138286143ad2cd7055fbc9401baf150b3d513c3d0ae",
+      "original_bytes": 17196739,
+      "sha256": "ec2476c9fb34a202b11d1138286143ad2cd7055fbc9401baf150b3d513c3d0ae",
+      "provenance_domain_id": "ed2cc0a2ac989574f7730b3bb92e10fbb24df80a929ea730dee7750fe8120356"
+    }
+  ],
+  "shifu": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Shifu.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Shifu.pcap",
+      "label": "Shifu",
+      "file_id": "17e27996a4f5044240699fd604ed8e5c8058c9bec1ecd47800b88cec9aca695e",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Shifu.pcap",
+      "original_sha256": "c645adb19ecbba73f4b0596b1b877e49b1fe08b13670b98662cb68108dbcef44",
+      "original_bytes": 60753746,
+      "sha256": "c645adb19ecbba73f4b0596b1b877e49b1fe08b13670b98662cb68108dbcef44",
+      "provenance_domain_id": "78b5111396ffb29a39026137f31c1f3f3f3f541267064b0fd8d1ac3210334e24"
+    }
+  ],
+  "tinba": [
+    {
+      "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Tinba.pcap",
+      "relative_path": "USTC-TFC2016-master/Malware/Tinba.pcap",
+      "label": "Tinba",
+      "file_id": "e291b1eaaf644f85317b6ad5aad3ab1795fb65320de3aa86889909d3c7d14d67",
+      "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Tinba.pcap",
+      "original_sha256": "fd893402b392188a4c2a79055776e03def1b7f3ac528397464b93fa848bf9670",
+      "original_bytes": 2680243,
+      "sha256": "fd893402b392188a4c2a79055776e03def1b7f3ac528397464b93fa848bf9670",
+      "provenance_domain_id": "0483a91adf859ac31d96c0ee1081ee651dd11e059216b73c00881fc34125e4b2"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "affected": [
+    {
+      "family": "cridex",
+      "original_sha256": "b5bfc716b7f875b8c4cd749874850c672b2b4f12b101b2016622a1cc0eb94da1",
+      "boundary": {
+        "file_id": "d3241a87ab62cafccaaa8b12952a6a5a296a782c0c894d9de044629d5aea91de",
+        "packet_index": 0,
+        "ts": 1.5e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/cridex/REBUILD_COMPLETE.json"
+    },
+    {
+      "family": "geodo",
+      "original_sha256": "448fdf2fe393dce570a694bc70e0147c9c3a8877e9abd28ab306c401d6f200a4",
+      "boundary": {
+        "file_id": "9a3cc52ba16fcb9837b1ab90d8ad6e07b71529700b2acd15c8df3968a9205d57",
+        "packet_index": 0,
+        "ts": 2e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/geodo/REBUILD_COMPLETE.json"
+    },
+    {
+      "family": "htbot",
+      "original_sha256": "cf6b9a726cd3dcb1518ffceb0568961ac0e813efa26bd6aaad0beadb0cf912c4",
+      "boundary": {
+        "file_id": "bd575f6d15b9a3204e7fdd042c4e22a959f6511b4c0b599b4d8d9510232ef217",
+        "packet_index": 0,
+        "ts": 2.1e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/htbot/REBUILD_COMPLETE.json"
+    },
+    {
+      "family": "miuref",
+      "original_sha256": "ec2476c9fb34a202b11d1138286143ad2cd7055fbc9401baf150b3d513c3d0ae",
+      "boundary": {
+        "file_id": "c33c742f8000eb7a275dd8c47e9df983f7054d20e59e74c350e79756f63aa4f5",
+        "packet_index": 0,
+        "ts": 1.7e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/miuref/REBUILD_COMPLETE.json"
+    },
+    {
+      "family": "shifu",
+      "original_sha256": "c645adb19ecbba73f4b0596b1b877e49b1fe08b13670b98662cb68108dbcef44",
+      "boundary": {
+        "file_id": "17e27996a4f5044240699fd604ed8e5c8058c9bec1ecd47800b88cec9aca695e",
+        "packet_index": 0,
+        "ts": 1.5e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/shifu/REBUILD_COMPLETE.json"
+    },
+    {
+      "family": "tinba",
+      "original_sha256": "fd893402b392188a4c2a79055776e03def1b7f3ac528397464b93fa848bf9670",
+      "boundary": {
+        "file_id": "e291b1eaaf644f85317b6ad5aad3ab1795fb65320de3aa86889909d3c7d14d67",
+        "packet_index": 0,
+        "ts": 2e-05,
+        "caplen": 4,
+        "wirelen": 60,
+        "available_records_begin_byte": 44,
+        "reason": "unassignable leading observation; not restored"
+      },
+      "old_report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/tinba/REBUILD_COMPLETE.json"
+    }
+  ],
+  "unaffected_sources_reused": 14,
+  "old_outputs_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "time": 1794924448.184675,
+  "USTC_RF_smoke": "PASS 2 Val/Test episodes x Clean/IBP30",
+  "USTC_AdaFuse_GPU1_smoke": "PASS 2 updates shot10 + 2 Val/Test episodes x Clean/IBP30",
+  "ISCX_initial_smoke": "pandas C CSV parser SIGSEGV; replaced with stdlib csv; no data/split changes",
+  "formal_training_started": false,
+  "scope": "smoke outputs excluded from formal tables",
+  "ISCX_AdaFuse_GPU0_smoke": "PASS after stdlib CSV repair: 2 updates + paired Val/Test Clean/IBP30"
+}

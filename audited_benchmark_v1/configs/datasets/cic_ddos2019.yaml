@@ -1,0 +1,27 @@
+stat_dim: 77
+normal_label: BENIGN
+max_samples: 10000
+attack_classes:
+- Syn
+- DrDoS_MSSQL
+- DrDoS_NetBIOS
+- DrDoS_UDP
+- UDP-lag
+benign_mapping: []
+attack_mapping:
+  UDPLag: UDP-lag
+  MSSQL: DrDoS_MSSQL
+  NetBIOS: DrDoS_NetBIOS
+  UDP: DrDoS_UDP
+name: CIC_DDOS
+input: data/processed/cic_ddos2019/dataset.pkl
+sequence_length: 512
+split_seed: 42
+split_protocol: class_rotate
+normal_split_ratios:
+- 0.6
+- 0.2
+- 0.2
+novel_classes_per_round: 1
+round_val_novel_classes: 1
+min_query_num: 15

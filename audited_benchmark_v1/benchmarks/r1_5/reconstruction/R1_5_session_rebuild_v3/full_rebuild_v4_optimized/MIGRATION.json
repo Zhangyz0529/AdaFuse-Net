@@ -1,0 +1,25 @@
+{
+  "time": 1794921846.7801862,
+  "terminated_old": [
+    {
+      "pid": 1139052,
+      "command": "/home/zzu/.conda/envs/zyz_env/bin/python -u /home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/resume_ddos_after_cicids.py"
+    },
+    {
+      "pid": 1058864,
+      "command": "/home/zzu/.conda/envs/zyz_env/bin/python -u /home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/run.py --data-root /home/zzu/zyz_workspace/TNSM/data --dataset CIC_DDOS --domain Test_Day_03-11"
+    }
+  ],
+  "paused_dispatcher_only": [
+    {
+      "pid": 1184310,
+      "command": "/home/zzu/.conda/envs/zyz_env/bin/python -u TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/watch.py"
+    }
+  ],
+  "IDS_audit_child_unchanged": true,
+  "archived_partial_index": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/archives/partial_CIC_DDOS_before_storage_v4_1794921846",
+  "public_output": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/outputs/CIC_DDOS",
+  "new_output": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild_v4_optimized/outputs/CIC_DDOS",
+  "scientific_settings_unchanged": true,
+  "reason": "observed severe random-key disk writes; old CSV progress partial, no result/checkpoint existed"
+}

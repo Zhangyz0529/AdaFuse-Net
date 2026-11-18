@@ -1,0 +1,8 @@
+{
+  "time": 1794930806.3415241,
+  "user_authorization": "use original project Pre-Contrast code rather than wait for author implementation",
+  "display_model": "Pre-Contrast-Local",
+  "source_snapshot": "precontrast_local_source/SOURCE_IDENTITY.json",
+  "protocol_sha256": "c7b4d11372b7e9477da707a3688d7e6dcb8f5d26324c1c82950a13e7e37b95cf",
+  "no_old_results_reused": true
+}

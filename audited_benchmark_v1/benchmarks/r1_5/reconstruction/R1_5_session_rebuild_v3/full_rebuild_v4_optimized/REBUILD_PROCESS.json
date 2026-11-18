@@ -1,0 +1,13 @@
+{
+  "pid": 1198530,
+  "command": [
+    "/home/zzu/.conda/envs/zyz_env/bin/python",
+    "-u",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild_v4_optimized/run.py",
+    "--dataset",
+    "CIC_DDOS",
+    "--data-root",
+    "/home/zzu/zyz_workspace/TNSM/data"
+  ],
+  "time": 1794921846.7850215
+}

@@ -1,0 +1,34 @@
+{
+  "AdaFuse-Net": {
+    "status": "READY_FIXED_CONFIGURATION",
+    "implementation": "public FactorialNet + CE/SCL/Polar/Dec"
+  },
+  "RandomForest": {
+    "status": "READY_SUPPORT_FITTED_NATIVE",
+    "implementation": "sklearn RandomForestClassifier100trees"
+  },
+  "MFF": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local core-idea adapter; original training/representation correspondence unverified"
+  },
+  "GP-VAE": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local shared-backbone embedding adapter; no verified original reconstruction/KL optimization path"
+  },
+  "MetaTraffic": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local shared-backbone smoothing/prototype approximation"
+  },
+  "Pre-Contrast": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local code explicitly omits pretraining"
+  },
+  "Trafficformer-Light": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local registry classified as architecture adapter; original training mechanism not verified"
+  },
+  "FlowPic": {
+    "status": "BLOCKED_FIDELITY_AUDIT",
+    "reason": "local bytes-to-square image adapter; original input representation correspondence not verified"
+  }
+}

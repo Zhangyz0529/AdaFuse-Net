@@ -1,0 +1,6 @@
+{
+  "time": 1794929094.2620418,
+  "scope": "MFF/GP-VAE newly enabled after smoke; FlowPic enabled only after native-source-input gate and smoke",
+  "protocol_sha256": "f91c1fde53f330087155e42f0c10ec3ecbcd11c51de10182613d812ae57d0979",
+  "previous_runs_retained": true
+}

@@ -1,0 +1,107 @@
+{
+  "dataset": "ISCX",
+  "model": "Trafficformer-Light",
+  "implementation_version": "native_common_input_fewshot_v2",
+  "seed": 2026,
+  "fold": "round4",
+  "shot": 10,
+  "cache_attestation": {
+    "dataset": "ISCX",
+    "fold": "round4",
+    "records": 19091,
+    "source_root": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/partitions/ISCX",
+    "source_gate_sha256": "9cf5a92b217fb0be571baee897f28c260ce1c4f551459923ea29aef48e85667e",
+    "source_eval_sha256": "6e0e2534dbebabf16b2c420c00b93dd07d71ad3f1cec4b823519b9a3f1ef6cc6",
+    "training_plan_sha256": "ec8f67dbf5ff0dfafd3021248c70d8cbb5c072021cd8b3bf178e5b143a6ea48b",
+    "stats_sha256": "21f8afe941723038f6d06b4a35dac2644644b98ebba8c377fc88bd2c0327c931",
+    "sequence_sha256": "d15ea70c7ad6c2109dbad2c2e1341345c34fa68bc421d60500c87851b180b197",
+    "status": "EXACT_SOURCE_INPUTS_AND_PLANS"
+  },
+  "protocol": {
+    "version": "native_common_input_fewshot_v2",
+    "method_identity": "documented few-shot adaptations, not exact reproduction of original paper tables",
+    "seeds": [
+      42,
+      3407,
+      2026,
+      123,
+      5678
+    ],
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "training_updates": 100,
+    "checkpoint": "last step100",
+    "selection": "fixed original/paper defaults; no test-based HPO; no claim fully tuned",
+    "evaluation": "same frozen Val/Test100episodes15query per class, same support/queryIDs",
+    "input": "same anonymized512bytes, prepared fold-specific statistical vector; GP-VAE pads512 zeros to native32x32",
+    "MFF": {
+      "source": "https://www.mdpi.com/2079-9292/14/13/2584",
+      "structure": "Table5 1DSE-ResNet18 blocks2/2/2/2 channels32/64/128/256, AE d-40-26-40-d, fused282-100-classes",
+      "adaptations": "common512bytes rather than1024; common d25/77/29 instead of52; no claim matching full original feature pipeline",
+      "objective": "CE +0.1 reconstructionMSE; auxiliary coefficient fixed implementation choice before testing",
+      "optimizer": "Adam lr0.001 weight_decay0.1, paper training defaults; fixed100updates instead120 full epochs",
+      "fewshot": "encoder frozen, replace final class layer with binary softmax; fit support-only25steps Adam lr0.01; no prototype classifier"
+    },
+    "GP-VAE": {
+      "source": "https://github.com/niebikong/Open-Detect",
+      "implementation": "official ResNet18 encoder/decoder, trainable Gaussian prototypes, official reconstruction/KL/entropy/discriminative loss",
+      "optimizer": "Adam0.001, balance0.005, temp_inter1/temp_intra1, official defaults",
+      "fewshot": "freeze encoder/decoder, estimate/optimize2 unit-covariance Gaussian means from support only25steps; classify by native Gaussian KL; no novelty rejection threshold fitted",
+      "adaptations": "common input512bytes zero-pad1024; training100updates replaces original100epochs; no original-table performance claim"
+    },
+    "FlowPic": {
+      "source": "https://github.com/talshapira/FlowPic",
+      "implementation": "size/time histogram1500x1500; notebook CNN10/20 channels kernel10stride5 pool2, FC64 softmax",
+      "fewshot": "frozen CNN, fresh binary softmax support-only25steps",
+      "adaptations": "one audited bidirectional sample per histogram, no60s reslicing/length-duration filtering because shared sampleIDs must remain fixed; zero-duration packets assigned timebin0; explicitly session-histogram adaptation, not original raw segmentation",
+      "IBP30": "not applicable to timing/size input; byte-only perturbation does not change FlowPic inputs; Clean only, do not fabricate robustness comparison"
+    },
+    "Pre-Contrast": "SKIPPED_BY_USER: do not wait for unavailable author code/full text",
+    "MetaTraffic": {
+      "source": "https://github.com/FIND-Lab/MAML-Training-ETC",
+      "implementation": "unmodified author MASF+DFNet5000, IMP/ATS/AUG all enabled",
+      "input": "first5000 observed signed IP lengths, pad0; first observed source endpoint positive",
+      "domains": "synthetic Train-only length scales1.0/0.9/1.1 on the same Train records; NOT independent measured network environments",
+      "optimization": "author defaults update_lr0.001/meta_lr0.0002/embedding_lr0.0001;100outer episodes; each outer step includes native inner/meta optimizations; not equal100single Adam updates",
+      "fewshot": "freeze native DF features; fresh binary softmax, support only25steps Adam0.01",
+      "IBP30": "byte-only condition not applicable; native size pattern unchanged; Clean only",
+      "limitation": "native framework adapted to synthetic domains rather than reconstructing authors real multi-network scenario; no official original-table claim"
+    },
+    "Trafficformer-Light": {
+      "source": "https://github.com/IDP-code/TrafficFormer",
+      "implementation": "author UER TransformerEncoder+WordPosSegEmbedding+BertFlowTarget MLM/MSP; lightweight2layers hidden128 heads4",
+      "input": "overlapping byte bigrams from common512 bytes, fixed complete65536bigram vocabulary+5 special tokens; source-derived direction-burst spans",
+      "pretraining": "first50Trainepisodes MLM15percent80/10/10 replacement + official5-way MSP semantics; only available observed burst cases, fallback genuine other-Train-flow burst; never useVal/Test",
+      "finetuning": "next50Trainepisodes native class CE; all100episodes same IDs as AdaFuse plan; this is two-stage100episode budget, not original90k pretraining steps",
+      "fewshot": "frozen native representation, new binary softmax support-only25steps",
+      "exposure": "no external pretrained weights, tokenizer learns no test statistics",
+      "limitation": "documented local lightweight configuration, not exact full TrafficFormer reproduction"
+    }
+  },
+  "worker_sha256": "24c765b3692c7aa472c2cae77e358d97049325f169141bf689a9b2a694de2703",
+  "models_sha256": "e984f65ccff5448f030a45c63e49192791f111e161820dfc7517237164d7afd2",
+  "vendor_versions": {
+    "MetaTraffic": {
+      "commit": "8e1597bd1a5c0862d88b33ddf0ab7f2cccacd73b",
+      "origin": "https://github.com/FIND-Lab/MAML-Training-ETC.git"
+    },
+    "Open-Detect": {
+      "commit": "b50a18515a01799468c10f6c9b60c01f8a6a4e7c",
+      "origin": "https://github.com/niebikong/Open-Detect.git"
+    },
+    "FlowPic": {
+      "commit": "000927f707a204c868bbceb79cd621814bd98ad6",
+      "origin": "https://github.com/talshapira/FlowPic.git"
+    },
+    "TrafficFormer": {
+      "commit": "6d0ba64d82e74fb130c6c7301ef20885dbfbdf29",
+      "origin": "https://github.com/IDP-code/TrafficFormer.git"
+    }
+  },
+  "torch": "2.1.2+cu121",
+  "smoke": false
+}

@@ -1,0 +1,19 @@
+{
+  "models": [
+    "MFF",
+    "GP-VAE",
+    "FlowPic"
+  ],
+  "priority_datasets": [
+    "USTC",
+    "ISCX",
+    "CIC_IDS",
+    "CIC_DDOS",
+    "CIC_DOH"
+  ],
+  "root": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1",
+  "worker": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/worker.py",
+  "version": "native_common_input_fewshot_v1",
+  "require_cache_complete": true,
+  "FlowPic_extra_gate": "flowpic/<dataset>/COMPLETE.json + smoke/USTC/FlowPic/seed42/round0/shot1/COMPLETE.json"
+}

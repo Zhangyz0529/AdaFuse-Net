@@ -1,0 +1,108 @@
+{
+  "time": 1794970596.244723,
+  "models": {
+    "MFF": {
+      "gate": "PASS",
+      "required_updates": 2,
+      "observed_updates": 2,
+      "formal_complete": {
+        "ISCX": 100,
+        "USTC": 80,
+        "CIC_IDS": 100
+      }
+    },
+    "GP-VAE": {
+      "gate": "PASS",
+      "required_updates": 2,
+      "observed_updates": 2,
+      "formal_complete": {
+        "ISCX": 100,
+        "USTC": 80,
+        "CIC_IDS": 100
+      }
+    },
+    "FlowPic": {
+      "gate": "PASS",
+      "required_updates": 4,
+      "observed_updates": 4,
+      "formal_complete": {
+        "ISCX": 100,
+        "USTC": 80,
+        "CIC_IDS": 100
+      }
+    },
+    "MetaTraffic": {
+      "gate": "PASS",
+      "required_updates": 100,
+      "observed_updates": 100,
+      "formal_complete": {
+        "ISCX": 7,
+        "USTC": 80
+      },
+      "prior_v3_full_run_failed": true,
+      "prior_failures_retained": "META_V3_RETIREMENT.json"
+    },
+    "Trafficformer-Light": {
+      "gate": "PASS",
+      "required_updates": 4,
+      "observed_updates": 4,
+      "formal_complete": {
+        "ISCX": 100,
+        "USTC": 80,
+        "CIC_IDS": 100
+      }
+    },
+    "Pre-Contrast-Local": {
+      "gate": "PASS",
+      "required_updates": 2,
+      "observed_updates": 2,
+      "formal_complete": {
+        "ISCX": 100,
+        "USTC": 80,
+        "CIC_IDS": 100
+      }
+    }
+  },
+  "active_jobs": [
+    {
+      "key": "V4_ISCX_MetaTraffic_42_round1_shot10",
+      "dataset": "ISCX",
+      "model": "MetaTraffic",
+      "seed": 42,
+      "fold": 1,
+      "shot": 10,
+      "gpu": 0,
+      "command": [
+        "/home/zzu/.conda/envs/zyz_env/bin/python",
+        "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/worker_v4.py",
+        "--dataset",
+        "ISCX",
+        "--fold",
+        "round1",
+        "--shot",
+        "10",
+        "--seed",
+        "42",
+        "--model",
+        "MetaTraffic",
+        "--device",
+        "cuda:0"
+      ],
+      "start": 1794970258.8134122,
+      "output_dir": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/runs/ISCX/MetaTraffic/seed42/round1/shot10",
+      "smoke": false,
+      "implementation_version": "native_common_input_fewshot_v4",
+      "pid": 1770980
+    }
+  ],
+  "ready_datasets": [
+    "USTC",
+    "ISCX",
+    "CIC_IDS"
+  ],
+  "waiting": {
+    "CIC_DDOS": "WAIT_PARTITION_GATE",
+    "CIC_DOH": "WAIT_PARTITION_GATE"
+  },
+  "scope": "marker/log evidence, queue refreshed by supervisor; retired versions never aggregated"
+}

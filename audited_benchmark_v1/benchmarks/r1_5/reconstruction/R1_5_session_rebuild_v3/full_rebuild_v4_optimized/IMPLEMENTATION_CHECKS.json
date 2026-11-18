@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "tests": {
+    "test_pipeline.py": {
+      "returncode": 0,
+      "stdout": "outputs csv_ingest {'csv_rows': 22, 'valid_rows': 21, 'file': 'source.csv'}\noutputs pcap_file_complete {'file': 'source.pcap', 'packet_records': 22, 'retained': 21}\noutputs source_policy_fixed {'status': 'CERTIFIED_FOR_DECLARED_SCOPE', 'metric': 'capture_payload_len', 'anchors': 21}\noutputs finished_unsplit {'dataset': 'CIC_IDS', 'domain': 'synthetic', 'status': 'RECONSTRUCTED_UNSPLIT', 'source_policy': 'CERTIFIED_FOR_DECLARED_SCOPE', 'accepted': 20, 'matching_or_scope_rejected': 1, 'parse_rejected': 1, 'csv_total': 22, 'independent_observed_sessions_by_label': {'BENIGN': 20}, 'conservative_tuple_source_groups_by_label': {'BENIGN': 20}, 'flags': {'missing_initial_syn': 20, 'closed_control_tail_packets': 0, 'one_or_two_packet_records': 20}, 'training_allowed': False, 'scaler_fitted': False, 'formal_split_generated': False, 'counts_close': True}\n{\"passed\": true, \"scope\": \"synthetic end-to-end, not full-source certification\", \"result\": {\"dataset\": \"CIC_IDS\", \"domain\": \"synthetic\", \"status\": \"RECONSTRUCTED_UNSPLIT\", \"source_policy\": \"CERTIFIED_FOR_DECLARED_SCOPE\", \"accepted\": 20, \"matching_or_scope_rejected\": 1, \"parse_rejected\": 1, \"csv_total\": 22, \"independent_observed_sessions_by_label\": {\"BENIGN\": 20}, \"conservative_tuple_source_groups_by_label\": {\"BENIGN\": 20}, \"flags\": {\"missing_initial_syn\": 20, \"closed_control_tail_packets\": 0, \"one_or_two_packet_records\": 20}, \"training_allowed\": false, \"scaler_fitted\": false, \"formal_split_generated\": false, \"counts_close\": true}}\n",
+      "stderr": ""
+    },
+    "test_key_equivalence.py": {
+      "returncode": 0,
+      "stdout": "old csv_ingest {'csv_rows': 4, 'valid_rows': 3, 'file': 'fixture.csv'}\nnew csv_ingest {'csv_rows': 4, 'valid_rows': 3, 'file': 'fixture.csv'}\n{\"passed\": true, \"checks\": [\"scientific policies unchanged except version identity\", \"all normalized rows byte-identical\", \"duplicate-key dedup exactly equivalent\", \"parse rejection log exactly equivalent\"], \"synthetic_only\": true}\n",
+      "stderr": ""
+    },
+    "test_window_index.py": {
+      "returncode": 0,
+      "stdout": "{\"passed\": true, \"exact_window_comparisons\": 1032, \"scope\": \"300 random packet groups + all66 fixed real cases, both byte metrics\"}\n",
+      "stderr": ""
+    },
+    "real2000_CIC_DDOS_rows": {
+      "passed": true,
+      "source": "/home/zzu/zyz_workspace/TNSM/data/CIC-DDoS-2019/Test_Day_03-11/CSVs/03-11/LDAP.csv",
+      "rows": 2000,
+      "normalized_rows_keys_and_rejections_identical": true,
+      "scope": "fixed first2000 rows; not complete-source equivalence proof"
+    }
+  }
+}

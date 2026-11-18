@@ -1,0 +1,8 @@
+{
+  "time": 1794925122.8729348,
+  "source": "user explicit instruction each GPU at most2 tasks",
+  "max_tasks_per_gpu": 2,
+  "supersedes_resource_field_in_original_protocol": 3,
+  "scientific_protocol_changed": false,
+  "existing_workers": "adopt without restarting; any existing third task drains naturally"
+}

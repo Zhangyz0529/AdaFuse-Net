@@ -1,0 +1,14 @@
+{
+  "state": "CIC_IDS_PRIORITY_CIC_DDOS_PAUSED",
+  "time": 1794911721.7496092,
+  "active": [
+    "CIC_IDS"
+  ],
+  "paused": [
+    "CIC_DDOS",
+    "original_mixed_supervisor"
+  ],
+  "priority_status": "CICIDS_PRIORITY_STATUS.json",
+  "training_started": false,
+  "optuna_started": false
+}

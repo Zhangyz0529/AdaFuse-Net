@@ -1,0 +1,2514 @@
+{
+  "dataset": "ISCX",
+  "status": "PASS_PARTITIONS_AND_EVALUATION_POOLS",
+  "policy": {
+    "version": "task_role_v1",
+    "amendment": "source-count feasibility, before any model training; preserve old global-split failure reports",
+    "partition_assignment": "attack/target components assigned whole to their fold role; reference-only components use60/20/20; conflicting-role components all excluded",
+    "ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "split_seed": 42,
+    "pool_seed": 3407,
+    "episode_seed": 3407,
+    "minimum_samples_per_partition_class": 25,
+    "minimum_components_per_class": 2,
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "query_per_class": 15,
+    "evaluation_episodes_per_task_shot": 100,
+    "calibration_pool": "none; no calibration used; no fitted decision threshold in preparation",
+    "outer_tasks": "registry target Test; next target Val; remaining targets Train; dataset reference in all roles with disjoint groups",
+    "grouping": "session, conservative same-domain bidirectional tuple, exact model input, identical raw packet content, explicit uncertain-continuation edges",
+    "blocked_domains": "excluded by fixed source-evidence rule only; named in scope table; never by model score",
+    "no_seed_retries": true,
+    "training_allowed": false
+  },
+  "training_allowed": false,
+  "optuna_allowed": false,
+  "source_scope": [
+    {
+      "dataset": "ISCX",
+      "family": "aimchat1",
+      "accepted": 32,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "aimchat1": 32
+      },
+      "sessions_by_label": {
+        "aimchat1": 32
+      },
+      "source_groups_by_label": {
+        "aimchat1": 27
+      },
+      "flags": {
+        "one_or_two_packet_samples": 16,
+        "missing_initial_syn": 8
+      },
+      "packet_counts": {
+        "records": 404,
+        "decoded": 384,
+        "rejected": 20,
+        "reasons": {
+          "non_IP_frame": 20
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/AIMchat1.pcapng",
+            "relative_path": "ISCX/pcap/AIMchat1.pcapng",
+            "label": "aimchat1",
+            "file_id": "fb4e0ecccc76a7c8a3c13016417f3c67991f7841433f5352140e56a5b744101c",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/AIMchat1.pcapng",
+            "original_sha256": "f4720c75c27c51152ceb1146775f3d174b5121346a38eb9e60dc559af4a4af22",
+            "original_bytes": 67108,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "AIMchat1.pcapng",
+              "size": 67108,
+              "crc": 217061163
+            },
+            "sha256": "f4720c75c27c51152ceb1146775f3d174b5121346a38eb9e60dc559af4a4af22",
+            "provenance_domain_id": "53558dba7d500b187c4d99ca6969a8b1749dd313e982ab62235c7a98eca5cb58",
+            "records": 404
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "aimchat2",
+      "accepted": 34,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "aimchat2": 34
+      },
+      "sessions_by_label": {
+        "aimchat2": 34
+      },
+      "source_groups_by_label": {
+        "aimchat2": 32
+      },
+      "flags": {
+        "one_or_two_packet_samples": 21,
+        "missing_initial_syn": 9
+      },
+      "packet_counts": {
+        "records": 366,
+        "decoded": 358,
+        "rejected": 8,
+        "reasons": {
+          "non_IP_frame": 8
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/AIMchat2.pcapng",
+            "relative_path": "ISCX/pcap/AIMchat2.pcapng",
+            "label": "aimchat2",
+            "file_id": "5db18af5c98c66d45db62b7b0f8975441c43a53516a15676043e6071b742e6a4",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/AIMchat2.pcapng",
+            "original_sha256": "873bf4b89a04aec83e55e9effcc46d1a02c934247b8f0d82d0e27ab6c9f82a15",
+            "original_bytes": 66484,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "AIMchat2.pcapng",
+              "size": 66484,
+              "crc": 1473364937
+            },
+            "sha256": "873bf4b89a04aec83e55e9effcc46d1a02c934247b8f0d82d0e27ab6c9f82a15",
+            "provenance_domain_id": "881c9d57e4aea49ca18c253110e245eda6c81b5f060524c3871acd5664fea73f",
+            "records": 366
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "aim_chat_3",
+      "accepted": 368,
+      "rejected_observed_sessions": 5,
+      "by_label": {
+        "aim_chat_3b": 320,
+        "aim_chat_3a": 48
+      },
+      "sessions_by_label": {
+        "aim_chat_3b": 320,
+        "aim_chat_3a": 48
+      },
+      "source_groups_by_label": {
+        "aim_chat_3b": 315,
+        "aim_chat_3a": 40
+      },
+      "flags": {
+        "one_or_two_packet_samples": 337,
+        "missing_initial_syn": 13
+      },
+      "packet_counts": {
+        "records": 4099,
+        "decoded": 4018,
+        "rejected": 81,
+        "reasons": {
+          "non_IP_frame": 75,
+          "invalid_or_truncated_IPv4": 6
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/aim_chat_3a.pcap",
+            "relative_path": "ISCX/pcap/aim_chat_3a.pcap",
+            "label": "aim_chat_3a",
+            "file_id": "48250de30f155089d8e889d51918520411f06a54ccc35fa5494da3efc12bb262",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/aim_chat_3a.pcap",
+            "original_sha256": "e191df75c12e47d885fed09db9203ef7d84981e14936a69b0bbebf43b33eb7f5",
+            "original_bytes": 766138,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "aim_chat_3a.pcap",
+              "size": 766138,
+              "crc": 2163041878
+            },
+            "sha256": "e191df75c12e47d885fed09db9203ef7d84981e14936a69b0bbebf43b33eb7f5",
+            "provenance_domain_id": "88d551e954777b803aac74020157e8f9617c3bbb66adc3f82ae4317bc31e2368",
+            "records": 1243
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/aim_chat_3b.pcap",
+            "relative_path": "ISCX/pcap/aim_chat_3b.pcap",
+            "label": "aim_chat_3b",
+            "file_id": "0ae2b1b185b19937dcee630a48bee798221c095f164d9843b5bc72c38427163f",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/aim_chat_3b.pcap",
+            "original_sha256": "d59a0c4151c32517cf715b5d794c292796b3632fd2e3cbafbefda95c7dfc7293",
+            "original_bytes": 450816,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "aim_chat_3b.pcap",
+              "size": 450816,
+              "crc": 1676206920
+            },
+            "sha256": "d59a0c4151c32517cf715b5d794c292796b3632fd2e3cbafbefda95c7dfc7293",
+            "provenance_domain_id": "88d551e954777b803aac74020157e8f9617c3bbb66adc3f82ae4317bc31e2368",
+            "records": 2856
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "email1",
+      "accepted": 136,
+      "rejected_observed_sessions": 3665,
+      "by_label": {
+        "email1a": 44,
+        "email1b": 92
+      },
+      "sessions_by_label": {
+        "email1a": 44,
+        "email1b": 92
+      },
+      "source_groups_by_label": {
+        "email1a": 42,
+        "email1b": 80
+      },
+      "flags": {
+        "one_or_two_packet_samples": 79,
+        "missing_initial_syn": 5
+      },
+      "packet_counts": {
+        "records": 62976,
+        "decoded": 32982,
+        "rejected": 29994,
+        "reasons": {
+          "non_IP_frame": 29190,
+          "non_TCP_UDP": 771,
+          "invalid_or_truncated_IPv4": 33
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email1a.pcap",
+            "relative_path": "ISCX/pcap/email1a.pcap",
+            "label": "email1a",
+            "file_id": "c628fec682f38fe8e1714ecb320645e68c9f43ee46e77a62bfb44717d2d827da",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email1a.pcap",
+            "original_sha256": "bd11e7156bf3595cb149157cffe26758b52df5ee728d952f1a807db7c75b0a30",
+            "original_bytes": 3207205,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "email1a.pcap",
+              "size": 3207205,
+              "crc": 3639696003
+            },
+            "sha256": "bd11e7156bf3595cb149157cffe26758b52df5ee728d952f1a807db7c75b0a30",
+            "provenance_domain_id": "1693565c4990c404523a198bc218125baf59bf3f22462c550d12a84559ae6c2c",
+            "records": 30410
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email1b.pcap",
+            "relative_path": "ISCX/pcap/email1b.pcap",
+            "label": "email1b",
+            "file_id": "fe83e3c1df8d266bea78a3d80de7f932715b76ad15b20624e439d185f4ab9703",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email1b.pcap",
+            "original_sha256": "43c96bd70d2bfe92383f262ba6394d6638a25545c1d1e4fb99f86779bbd735da",
+            "original_bytes": 3259057,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "email1b.pcap",
+              "size": 3259057,
+              "crc": 3071523505
+            },
+            "sha256": "43c96bd70d2bfe92383f262ba6394d6638a25545c1d1e4fb99f86779bbd735da",
+            "provenance_domain_id": "1693565c4990c404523a198bc218125baf59bf3f22462c550d12a84559ae6c2c",
+            "records": 32566
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "email2",
+      "accepted": 599,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "email2b": 274,
+        "email2a": 325
+      },
+      "sessions_by_label": {
+        "email2b": 274,
+        "email2a": 325
+      },
+      "source_groups_by_label": {
+        "email2b": 218,
+        "email2a": 250
+      },
+      "flags": {
+        "one_or_two_packet_samples": 326,
+        "missing_initial_syn": 63
+      },
+      "packet_counts": {
+        "records": 12103,
+        "decoded": 11926,
+        "rejected": 177,
+        "reasons": {
+          "non_TCP_UDP": 45,
+          "non_IP_frame": 132
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email2a.pcap",
+            "relative_path": "ISCX/pcap/email2a.pcap",
+            "label": "email2a",
+            "file_id": "f1c34258bb36e1bedd6534f7883943d85fca42669037ad7c9072cfeb92f035c0",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email2a.pcap",
+            "original_sha256": "8f2c56f824433a762ad8e165a165b6ffb40f9c86c93cea741685ac1a4a6aed3c",
+            "original_bytes": 808096,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "email2a.pcap",
+              "size": 808096,
+              "crc": 851185615
+            },
+            "sha256": "8f2c56f824433a762ad8e165a165b6ffb40f9c86c93cea741685ac1a4a6aed3c",
+            "provenance_domain_id": "64e6afed198b8584d0891e82dd36c360482da1fec209eecfa69219098eeb6ea2",
+            "records": 4417
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email2b.pcap",
+            "relative_path": "ISCX/pcap/email2b.pcap",
+            "label": "email2b",
+            "file_id": "2d80d71a768db82c1cdc5a64e8ca99b774fdbc391f99469af9f01a1ae168ac8d",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/email2b.pcap",
+            "original_sha256": "ac35fc62a417a0d40159e61aac9d260d89dc78165ca51fd47cf09da839399471",
+            "original_bytes": 967539,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "email2b.pcap",
+              "size": 967539,
+              "crc": 651411141
+            },
+            "sha256": "ac35fc62a417a0d40159e61aac9d260d89dc78165ca51fd47cf09da839399471",
+            "provenance_domain_id": "64e6afed198b8584d0891e82dd36c360482da1fec209eecfa69219098eeb6ea2",
+            "records": 7686
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_audio1",
+      "accepted": 215,
+      "rejected_observed_sessions": 11,
+      "by_label": {
+        "facebook_audio1a": 172,
+        "facebook_audio1b": 43
+      },
+      "sessions_by_label": {
+        "facebook_audio1a": 172,
+        "facebook_audio1b": 43
+      },
+      "source_groups_by_label": {
+        "facebook_audio1a": 143,
+        "facebook_audio1b": 42
+      },
+      "flags": {
+        "one_or_two_packet_samples": 124,
+        "missing_initial_syn": 34
+      },
+      "packet_counts": {
+        "records": 93738,
+        "decoded": 93255,
+        "rejected": 483,
+        "reasons": {
+          "non_TCP_UDP": 371,
+          "non_IP_frame": 90,
+          "invalid_or_truncated_IPv4": 22
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio1a.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio1a.pcap",
+            "label": "facebook_audio1a",
+            "file_id": "b31d932c88240f03a61c62ef97267845e423ff4727221beb01759bf61374b354",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio1a.pcap",
+            "original_sha256": "00e045c94007b7dcc315c135cbe3218e99bf3555b918c420f3970a1e5b04e4e7",
+            "original_bytes": 8550782,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio1a.pcap",
+              "size": 8550782,
+              "crc": 1944245879
+            },
+            "sha256": "00e045c94007b7dcc315c135cbe3218e99bf3555b918c420f3970a1e5b04e4e7",
+            "provenance_domain_id": "031fc0bc29358e6169736212a48d6c6f21ba38f1e3736615089f200934169d3a",
+            "records": 46061
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio1b.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio1b.pcap",
+            "label": "facebook_audio1b",
+            "file_id": "c0e85073d07e963cb059a08d46a93436b608f60d553df3231bf0940cf4f6301b",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio1b.pcap",
+            "original_sha256": "06c71c0505f7c656a8334d329ae98de5ebb3c6b471772647d9617d3f0686893b",
+            "original_bytes": 9523424,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio1b.pcapng",
+              "size": 9523424,
+              "crc": 3730279172
+            },
+            "sha256": "06c71c0505f7c656a8334d329ae98de5ebb3c6b471772647d9617d3f0686893b",
+            "provenance_domain_id": "031fc0bc29358e6169736212a48d6c6f21ba38f1e3736615089f200934169d3a",
+            "records": 47677
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_audio2",
+      "accepted": 312,
+      "rejected_observed_sessions": 8,
+      "by_label": {
+        "facebook_audio2a": 275,
+        "facebook_audio2b": 37
+      },
+      "sessions_by_label": {
+        "facebook_audio2a": 275,
+        "facebook_audio2b": 37
+      },
+      "source_groups_by_label": {
+        "facebook_audio2a": 236,
+        "facebook_audio2b": 34
+      },
+      "flags": {
+        "one_or_two_packet_samples": 202,
+        "missing_initial_syn": 32
+      },
+      "packet_counts": {
+        "records": 185907,
+        "decoded": 185001,
+        "rejected": 906,
+        "reasons": {
+          "non_TCP_UDP": 730,
+          "non_IP_frame": 162,
+          "invalid_or_truncated_IPv4": 14
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio2a.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio2a.pcap",
+            "label": "facebook_audio2a",
+            "file_id": "ec0e85c9eb4bbb64dab344ac54b63f7e12e90b65e714d5743950c460df3aac7f",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio2a.pcap",
+            "original_sha256": "80b34bc5a1844a5d59e490e509fbaf26ac57eb42de5a08046ff0efebf3de73ad",
+            "original_bytes": 16469907,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio2a.pcap",
+              "size": 16469907,
+              "crc": 2941945949
+            },
+            "sha256": "80b34bc5a1844a5d59e490e509fbaf26ac57eb42de5a08046ff0efebf3de73ad",
+            "provenance_domain_id": "6320bc36eece56339edf0895967e0aba18c391e53d3da0c5aec508c30c8292e2",
+            "records": 91815
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio2b.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio2b.pcap",
+            "label": "facebook_audio2b",
+            "file_id": "487b25b26685bdfe3b91ab3f869b4d6db633f4232d904c349474af74500b8c02",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio2b.pcap",
+            "original_sha256": "d56a043ff5e7346e804ebe105cdb795f51efdf7ccd6364449c33f223a3929e24",
+            "original_bytes": 17811020,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio2b.pcapng",
+              "size": 17811020,
+              "crc": 760923026
+            },
+            "sha256": "d56a043ff5e7346e804ebe105cdb795f51efdf7ccd6364449c33f223a3929e24",
+            "provenance_domain_id": "6320bc36eece56339edf0895967e0aba18c391e53d3da0c5aec508c30c8292e2",
+            "records": 94092
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_audio3",
+      "accepted": 450,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "facebook_audio3": 450
+      },
+      "sessions_by_label": {
+        "facebook_audio3": 450
+      },
+      "source_groups_by_label": {
+        "facebook_audio3": 213
+      },
+      "flags": {
+        "one_or_two_packet_samples": 211,
+        "missing_initial_syn": 13
+      },
+      "packet_counts": {
+        "records": 643049,
+        "decoded": 642679,
+        "rejected": 370,
+        "reasons": {
+          "non_TCP_UDP": 306,
+          "non_IP_frame": 64
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio3.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio3.pcap",
+            "label": "facebook_audio3",
+            "file_id": "74455c6a82c4eea204f83269135d0efb7afdde58ffbe2dfad30264a719afb3d9",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio3.pcap",
+            "original_sha256": "f0e43a55bdc7b41b0d3aa8bbc5451c457bf5f9147a0ca72cfabb53d76fe8e93c",
+            "original_bytes": 105311908,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio3.pcapng",
+              "size": 105311908,
+              "crc": 1661679249
+            },
+            "sha256": "f0e43a55bdc7b41b0d3aa8bbc5451c457bf5f9147a0ca72cfabb53d76fe8e93c",
+            "provenance_domain_id": "c0df0e70636970fa9ceeccfdc3cb0da358343c4bcfc949c6faa3c21bc5f6e2f1",
+            "records": 643049
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_audio4",
+      "accepted": 108443,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "facebook_audio4": 108443
+      },
+      "sessions_by_label": {
+        "facebook_audio4": 108443
+      },
+      "source_groups_by_label": {
+        "facebook_audio4": 78797
+      },
+      "flags": {
+        "one_or_two_packet_samples": 106383,
+        "missing_initial_syn": 135
+      },
+      "packet_counts": {
+        "records": 1040037,
+        "decoded": 930796,
+        "rejected": 109241,
+        "reasons": {
+          "non_IP_frame": 104186,
+          "non_TCP_UDP": 5055
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio4.pcap",
+            "relative_path": "ISCX/pcap/facebook_audio4.pcap",
+            "label": "facebook_audio4",
+            "file_id": "5a50d1d37be4f01f7c7d0b2790e3080236b584a6b33023e48bdb278d3f3c17a2",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_audio4.pcap",
+            "original_sha256": "43fd7b800c04a4d5572e1053c85ab146896a9298ae54ca0a38bf2bfa4525c06b",
+            "original_bytes": 150194420,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_audio4.pcapng",
+              "size": 150194420,
+              "crc": 3340599415
+            },
+            "sha256": "43fd7b800c04a4d5572e1053c85ab146896a9298ae54ca0a38bf2bfa4525c06b",
+            "provenance_domain_id": "a7061d97f6e40f9529c8629e70c296293dbcda21d7f14832e7f90bb78490dcb2",
+            "records": 1040037
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_chat_4",
+      "accepted": 388,
+      "rejected_observed_sessions": 9,
+      "by_label": {
+        "facebook_chat_4b": 314,
+        "facebook_chat_4a": 74
+      },
+      "sessions_by_label": {
+        "facebook_chat_4b": 314,
+        "facebook_chat_4a": 74
+      },
+      "source_groups_by_label": {
+        "facebook_chat_4b": 306,
+        "facebook_chat_4a": 61
+      },
+      "flags": {
+        "one_or_two_packet_samples": 324,
+        "missing_initial_syn": 42
+      },
+      "packet_counts": {
+        "records": 7719,
+        "decoded": 7628,
+        "rejected": 91,
+        "reasons": {
+          "non_IP_frame": 48,
+          "invalid_or_truncated_IPv4": 43
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_chat_4a.pcap",
+            "relative_path": "ISCX/pcap/facebook_chat_4a.pcap",
+            "label": "facebook_chat_4a",
+            "file_id": "b73ff1a3e0b9c13e6d1d11fcb1b8583b6b4cb192693c0d6163d6a2c086d10447",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_chat_4a.pcap",
+            "original_sha256": "87f5db2e1ab2df7aae06f435cce3683053b25a11d40a8aecd8237dcf92a5e7b5",
+            "original_bytes": 877992,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_chat_4a.pcap",
+              "size": 877992,
+              "crc": 1394979575
+            },
+            "sha256": "87f5db2e1ab2df7aae06f435cce3683053b25a11d40a8aecd8237dcf92a5e7b5",
+            "provenance_domain_id": "f5c563de49b6a539be80d4c3b906d0f490f906b477ee7f464a21e6032e58f915",
+            "records": 2192
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_chat_4b.pcap",
+            "relative_path": "ISCX/pcap/facebook_chat_4b.pcap",
+            "label": "facebook_chat_4b",
+            "file_id": "899f8c44466bd68b35c4729034a5ec1341ed8881ef3c2e58c948bb4652b1d49b",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_chat_4b.pcap",
+            "original_sha256": "7a08ff249133e3e8dea384b1a099dcfb49a6f7301ee6955b7656135116e47909",
+            "original_bytes": 1696402,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_chat_4b.pcap",
+              "size": 1696402,
+              "crc": 3071113173
+            },
+            "sha256": "7a08ff249133e3e8dea384b1a099dcfb49a6f7301ee6955b7656135116e47909",
+            "provenance_domain_id": "f5c563de49b6a539be80d4c3b906d0f490f906b477ee7f464a21e6032e58f915",
+            "records": 5527
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_video1",
+      "accepted": 199,
+      "rejected_observed_sessions": 6,
+      "by_label": {
+        "facebook_video1a": 186,
+        "facebook_video1b": 13
+      },
+      "sessions_by_label": {
+        "facebook_video1a": 186,
+        "facebook_video1b": 13
+      },
+      "source_groups_by_label": {
+        "facebook_video1a": 154,
+        "facebook_video1b": 13
+      },
+      "flags": {
+        "one_or_two_packet_samples": 94,
+        "missing_initial_syn": 49
+      },
+      "packet_counts": {
+        "records": 249681,
+        "decoded": 249416,
+        "rejected": 265,
+        "reasons": {
+          "non_TCP_UDP": 193,
+          "non_IP_frame": 66,
+          "invalid_or_truncated_IPv4": 6
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video1a.pcap",
+            "relative_path": "ISCX/pcap/facebook_video1a.pcap",
+            "label": "facebook_video1a",
+            "file_id": "44e9408aab98b1b140ddc7a54a4e36fd4be002363ce4e5a1404a50b8caec8fbe",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video1a.pcap",
+            "original_sha256": "db361498c1ba27c4f9ae4abfadaaba9d8cfb3a88277c19b466503f2fc3620304",
+            "original_bytes": 146929062,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_video1a.pcap",
+              "size": 146929062,
+              "crc": 2761399263
+            },
+            "sha256": "db361498c1ba27c4f9ae4abfadaaba9d8cfb3a88277c19b466503f2fc3620304",
+            "provenance_domain_id": "37a1cd88d3d6f2e42462d3358c57e2d1c3bcd8a9f8c5b1f349b5c0ab3450f26c",
+            "records": 156989
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video1b.pcap",
+            "relative_path": "ISCX/pcap/facebook_video1b.pcap",
+            "label": "facebook_video1b",
+            "file_id": "6cfa38a70a5b60d7e53acd5caa3632aaa41e878516e3de443fde10e69ed5805a",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video1b.pcap",
+            "original_sha256": "b55350777952f5d246a8bca9f8b45ae5f898deda6506c0a636bb4cb460bb6fb8",
+            "original_bytes": 89382896,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_video1b.pcapng",
+              "size": 89382896,
+              "crc": 2546610148
+            },
+            "sha256": "b55350777952f5d246a8bca9f8b45ae5f898deda6506c0a636bb4cb460bb6fb8",
+            "provenance_domain_id": "37a1cd88d3d6f2e42462d3358c57e2d1c3bcd8a9f8c5b1f349b5c0ab3450f26c",
+            "records": 92692
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebook_video2",
+      "accepted": 270,
+      "rejected_observed_sessions": 12,
+      "by_label": {
+        "facebook_video2a": 240,
+        "facebook_video2b": 30
+      },
+      "sessions_by_label": {
+        "facebook_video2a": 240,
+        "facebook_video2b": 30
+      },
+      "source_groups_by_label": {
+        "facebook_video2a": 198,
+        "facebook_video2b": 29
+      },
+      "flags": {
+        "one_or_two_packet_samples": 138,
+        "missing_initial_syn": 57
+      },
+      "packet_counts": {
+        "records": 490396,
+        "decoded": 489768,
+        "rejected": 628,
+        "reasons": {
+          "non_TCP_UDP": 489,
+          "non_IP_frame": 120,
+          "invalid_or_truncated_IPv4": 19
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video2a.pcap",
+            "relative_path": "ISCX/pcap/facebook_video2a.pcap",
+            "label": "facebook_video2a",
+            "file_id": "11f6dd1d42f555fdd0bb5ef94683e624952b8a26471e93659140f8931bf925c9",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video2a.pcap",
+            "original_sha256": "7f70a28520ab0018bce0cfc4b36eadd28b3000d9085d00136e834b67bd0fedf0",
+            "original_bytes": 230631530,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_video2a.pcap",
+              "size": 230631530,
+              "crc": 1792114885
+            },
+            "sha256": "7f70a28520ab0018bce0cfc4b36eadd28b3000d9085d00136e834b67bd0fedf0",
+            "provenance_domain_id": "aad312df42f5602bae4cf6a0c1236522d8716797e335b069d5c3561dfc2a289a",
+            "records": 244619
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video2b.pcap",
+            "relative_path": "ISCX/pcap/facebook_video2b.pcap",
+            "label": "facebook_video2b",
+            "file_id": "d5a307cc70f2b20412111fe00ace4910021feb9fde975182a64fa1e2664bce5e",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebook_video2b.pcap",
+            "original_sha256": "07951dbaff2822332eb08ecf625144565dffb2fcbedac5fa378431847db863cf",
+            "original_bytes": 234687720,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebook_video2b.pcapng",
+              "size": 234687720,
+              "crc": 3931043901
+            },
+            "sha256": "07951dbaff2822332eb08ecf625144565dffb2fcbedac5fa378431847db863cf",
+            "provenance_domain_id": "aad312df42f5602bae4cf6a0c1236522d8716797e335b069d5c3561dfc2a289a",
+            "records": 245777
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebookchat1",
+      "accepted": 36,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "facebookchat1": 36
+      },
+      "sessions_by_label": {
+        "facebookchat1": 36
+      },
+      "source_groups_by_label": {
+        "facebookchat1": 36
+      },
+      "flags": {
+        "one_or_two_packet_samples": 2,
+        "missing_initial_syn": 6
+      },
+      "packet_counts": {
+        "records": 1061,
+        "decoded": 1059,
+        "rejected": 2,
+        "reasons": {
+          "non_IP_frame": 2
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat1.pcap",
+            "relative_path": "ISCX/pcap/facebookchat1.pcap",
+            "label": "facebookchat1",
+            "file_id": "2029686aadc83685975402315d654ea5f58cee3d5a617e935c84040962ffe358",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat1.pcap",
+            "original_sha256": "82252d030cba2dac7f9cd9a22625b168ad88a2f1bc8294eec1941be688787274",
+            "original_bytes": 453200,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebookchat1.pcapng",
+              "size": 453200,
+              "crc": 293679709
+            },
+            "sha256": "82252d030cba2dac7f9cd9a22625b168ad88a2f1bc8294eec1941be688787274",
+            "provenance_domain_id": "f33d7ff2d96967895862652d2c59e64901d2346efd8b1c443ca096705db4021d",
+            "records": 1061
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebookchat2",
+      "accepted": 28,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "facebookchat2": 28
+      },
+      "sessions_by_label": {
+        "facebookchat2": 28
+      },
+      "source_groups_by_label": {
+        "facebookchat2": 27
+      },
+      "flags": {
+        "one_or_two_packet_samples": 4,
+        "missing_initial_syn": 8
+      },
+      "packet_counts": {
+        "records": 434,
+        "decoded": 434,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat2.pcap",
+            "relative_path": "ISCX/pcap/facebookchat2.pcap",
+            "label": "facebookchat2",
+            "file_id": "99b2804f1963e31673731ecbf27ff50a43dd0f746051e054693056d777770e17",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat2.pcap",
+            "original_sha256": "a868aa6031f6821fdb558466b99d5a76015e74f345fd69f4678365c6bf642cc6",
+            "original_bytes": 172956,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebookchat2.pcapng",
+              "size": 172956,
+              "crc": 171525796
+            },
+            "sha256": "a868aa6031f6821fdb558466b99d5a76015e74f345fd69f4678365c6bf642cc6",
+            "provenance_domain_id": "1ad6b634fc1b69dfb8fc80ca9bcf377eb970c49bff372da8a971055cab1e8e6f",
+            "records": 434
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "facebookchat3",
+      "accepted": 70,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "facebookchat3": 70
+      },
+      "sessions_by_label": {
+        "facebookchat3": 70
+      },
+      "source_groups_by_label": {
+        "facebookchat3": 69
+      },
+      "flags": {
+        "one_or_two_packet_samples": 8,
+        "missing_initial_syn": 15
+      },
+      "packet_counts": {
+        "records": 1726,
+        "decoded": 1718,
+        "rejected": 8,
+        "reasons": {
+          "non_IP_frame": 8
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat3.pcap",
+            "relative_path": "ISCX/pcap/facebookchat3.pcap",
+            "label": "facebookchat3",
+            "file_id": "6a0882e0ef438d48e09b86a3bbde67f469fa33ddf8d8461dd5403c6989cbc184",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/facebookchat3.pcap",
+            "original_sha256": "f0b22a3546fd0a7ec9dcffe481aeeea51ec20084b9ee7541b1d07c52b1b66421",
+            "original_bytes": 661548,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/NonVPN-PCAPs-01.zip",
+              "member": "facebookchat3.pcapng",
+              "size": 661548,
+              "crc": 1634306761
+            },
+            "sha256": "f0b22a3546fd0a7ec9dcffe481aeeea51ec20084b9ee7541b1d07c52b1b66421",
+            "provenance_domain_id": "910cd717c3f22abeffe5ab646f25a399c8fa246536c8c976190c89ffbae986b6",
+            "records": 1726
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_aim_chat1",
+      "accepted": 49,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_aim_chat1b": 14,
+        "vpn_aim_chat1a": 35
+      },
+      "sessions_by_label": {
+        "vpn_aim_chat1b": 14,
+        "vpn_aim_chat1a": 35
+      },
+      "source_groups_by_label": {
+        "vpn_aim_chat1b": 10,
+        "vpn_aim_chat1a": 22
+      },
+      "flags": {
+        "one_or_two_packet_samples": 36,
+        "missing_initial_syn": 26
+      },
+      "packet_counts": {
+        "records": 2455,
+        "decoded": 2454,
+        "rejected": 1,
+        "reasons": {
+          "non_TCP_UDP": 1
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_aim_chat1a.pcap",
+            "relative_path": "ISCX/pcap/vpn_aim_chat1a.pcap",
+            "label": "vpn_aim_chat1a",
+            "file_id": "91eb78ebe31a284e4dbb9aa2072da535b529eecb49db7866045a25a7c84bee84",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_aim_chat1a.pcap",
+            "original_sha256": "3a685ee836ab57f6c44dbdb28e45c857b9ad7036773d80825bb3e45c74922294",
+            "original_bytes": 178417,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_aim_chat1a.pcap",
+              "size": 178417,
+              "crc": 2741344648
+            },
+            "sha256": "3a685ee836ab57f6c44dbdb28e45c857b9ad7036773d80825bb3e45c74922294",
+            "provenance_domain_id": "8af62735b82fc48e1800904e03b9ffe4c3af56c617fcecdf4ce939136eadcfc1",
+            "records": 1168
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_aim_chat1b.pcap",
+            "relative_path": "ISCX/pcap/vpn_aim_chat1b.pcap",
+            "label": "vpn_aim_chat1b",
+            "file_id": "cf65cfd532b0c6306ae5cddfb4b6665c8f712823cfdb9d34f937baed44db63f0",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_aim_chat1b.pcap",
+            "original_sha256": "e5f60bbdc06813675ba3e1c1dd6c4ea93971d4c8f6d67a9226ed85bab68c30cf",
+            "original_bytes": 190525,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_aim_chat1b.pcap",
+              "size": 190525,
+              "crc": 2796375866
+            },
+            "sha256": "e5f60bbdc06813675ba3e1c1dd6c4ea93971d4c8f6d67a9226ed85bab68c30cf",
+            "provenance_domain_id": "8af62735b82fc48e1800904e03b9ffe4c3af56c617fcecdf4ce939136eadcfc1",
+            "records": 1287
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_bittorrent",
+      "accepted": 487,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_bittorrent": 487
+      },
+      "sessions_by_label": {
+        "vpn_bittorrent": 487
+      },
+      "source_groups_by_label": {
+        "vpn_bittorrent": 477
+      },
+      "flags": {
+        "one_or_two_packet_samples": 225,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 422098,
+        "decoded": 422074,
+        "rejected": 24,
+        "reasons": {
+          "non_TCP_UDP": 24
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_bittorrent.pcap",
+            "relative_path": "ISCX/pcap/vpn_bittorrent.pcap",
+            "label": "vpn_bittorrent",
+            "file_id": "dc862885a54c0488e790a919d91562d1f5254f488aec85ff931768de6a833247",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_bittorrent.pcap",
+            "original_sha256": "4858b3f0020756c7abd5cd6ce2bfee91d31eec2e0e957966dca53c6cf1eccbba",
+            "original_bytes": 376187475,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_bittorrent.pcap",
+              "size": 376187475,
+              "crc": 1397724936
+            },
+            "sha256": "4858b3f0020756c7abd5cd6ce2bfee91d31eec2e0e957966dca53c6cf1eccbba",
+            "provenance_domain_id": "4615cd6e8625d0e9468d841e560ec40566df0c0680e6c81450b9906e4379f6d9",
+            "records": 422098
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_email2",
+      "accepted": 301,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_email2a": 148,
+        "vpn_email2b": 153
+      },
+      "sessions_by_label": {
+        "vpn_email2a": 148,
+        "vpn_email2b": 153
+      },
+      "source_groups_by_label": {
+        "vpn_email2a": 148,
+        "vpn_email2b": 150
+      },
+      "flags": {
+        "one_or_two_packet_samples": 155,
+        "missing_initial_syn": 9
+      },
+      "packet_counts": {
+        "records": 21581,
+        "decoded": 21558,
+        "rejected": 23,
+        "reasons": {
+          "non_TCP_UDP": 23
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_email2a.pcap",
+            "relative_path": "ISCX/pcap/vpn_email2a.pcap",
+            "label": "vpn_email2a",
+            "file_id": "65a705ab28a74bc62edb86b9ba04b2c62db6c5d9c4ee373d8ae5888fd9dadad9",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_email2a.pcap",
+            "original_sha256": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+            "original_bytes": 559048,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_email2a.pcap",
+              "size": 559048,
+              "crc": 118075523
+            },
+            "sha256": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+            "provenance_domain_id": "de40550615af746a4b0f40f8c4f6a9e64799bf34a09454ed63f7033a2769aa49",
+            "records": 2707
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_email2b.pcap",
+            "relative_path": "ISCX/pcap/vpn_email2b.pcap",
+            "label": "vpn_email2b",
+            "file_id": "a5272a0bd55f93b310a925e11993536a9f35a1081c02ad8f783486cfb01c38e4",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_email2b.pcap",
+            "original_sha256": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+            "original_bytes": 7626146,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_email2b.pcap",
+              "size": 7626146,
+              "crc": 2050155570
+            },
+            "sha256": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+            "provenance_domain_id": "de40550615af746a4b0f40f8c4f6a9e64799bf34a09454ed63f7033a2769aa49",
+            "records": 18874
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_facebook_audio2",
+      "accepted": 1552,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_facebook_audio2": 1552
+      },
+      "sessions_by_label": {
+        "vpn_facebook_audio2": 1552
+      },
+      "source_groups_by_label": {
+        "vpn_facebook_audio2": 1335
+      },
+      "flags": {
+        "one_or_two_packet_samples": 1226,
+        "missing_initial_syn": 185
+      },
+      "packet_counts": {
+        "records": 15094,
+        "decoded": 14908,
+        "rejected": 186,
+        "reasons": {
+          "non_TCP_UDP": 186
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_audio2.pcap",
+            "relative_path": "ISCX/pcap/vpn_facebook_audio2.pcap",
+            "label": "vpn_facebook_audio2",
+            "file_id": "0105c9492b22f669f65a5b0d4dc7fdeacd11eb9b65602a459f340decd3edb1bd",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_audio2.pcap",
+            "original_sha256": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+            "original_bytes": 6501918,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_facebook_audio2.pcap",
+              "size": 6501918,
+              "crc": 3685645510
+            },
+            "sha256": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+            "provenance_domain_id": "887e90a60ca5734d40da29080de2d700cac16bcbdb88aab265bae7bd4bdfe2db",
+            "records": 15094
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_facebook_chat1",
+      "accepted": 1179,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_facebook_chat1b": 574,
+        "vpn_facebook_chat1a": 605
+      },
+      "sessions_by_label": {
+        "vpn_facebook_chat1b": 574,
+        "vpn_facebook_chat1a": 605
+      },
+      "source_groups_by_label": {
+        "vpn_facebook_chat1b": 574,
+        "vpn_facebook_chat1a": 585
+      },
+      "flags": {
+        "one_or_two_packet_samples": 1113,
+        "missing_initial_syn": 36
+      },
+      "packet_counts": {
+        "records": 16368,
+        "decoded": 16321,
+        "rejected": 47,
+        "reasons": {
+          "non_TCP_UDP": 47
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_chat1a.pcap",
+            "relative_path": "ISCX/pcap/vpn_facebook_chat1a.pcap",
+            "label": "vpn_facebook_chat1a",
+            "file_id": "b8d54d78495fce530de7e964181ae9033c96c32b27eb7e5d2e755cb853d29bd3",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_chat1a.pcap",
+            "original_sha256": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+            "original_bytes": 3396317,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_facebook_chat1a.pcap",
+              "size": 3396317,
+              "crc": 3698009907
+            },
+            "sha256": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+            "provenance_domain_id": "0c44b7229162bda34229cf767a86c80d2c91329dd026d784a49b1ff722a99ffe",
+            "records": 8801
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_chat1b.pcap",
+            "relative_path": "ISCX/pcap/vpn_facebook_chat1b.pcap",
+            "label": "vpn_facebook_chat1b",
+            "file_id": "fa65390378fc05ac406875be0e49bca056489f4fcd1106991da04d406151f811",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_facebook_chat1b.pcap",
+            "original_sha256": "f6ae91cc3b684af4841ad1593a1b08e57869a48843595b6c98149597613918d6",
+            "original_bytes": 2594284,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_facebook_chat1b.pcap",
+              "size": 2594284,
+              "crc": 1676156890
+            },
+            "sha256": "f6ae91cc3b684af4841ad1593a1b08e57869a48843595b6c98149597613918d6",
+            "provenance_domain_id": "0c44b7229162bda34229cf767a86c80d2c91329dd026d784a49b1ff722a99ffe",
+            "records": 7567
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_ftps",
+      "accepted": 113,
+      "rejected_observed_sessions": 7,
+      "by_label": {
+        "vpn_ftps_b": 45,
+        "vpn_ftps_a": 68
+      },
+      "sessions_by_label": {
+        "vpn_ftps_b": 45,
+        "vpn_ftps_a": 68
+      },
+      "source_groups_by_label": {
+        "vpn_ftps_b": 44,
+        "vpn_ftps_a": 67
+      },
+      "flags": {
+        "one_or_two_packet_samples": 16,
+        "missing_initial_syn": 3
+      },
+      "packet_counts": {
+        "records": 191254,
+        "decoded": 191246,
+        "rejected": 8,
+        "reasons": {
+          "non_TCP_UDP": 8
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_ftps_A.pcap",
+            "relative_path": "ISCX/pcap/vpn_ftps_A.pcap",
+            "label": "vpn_ftps_a",
+            "file_id": "556f46a9db58c466e451d06f9d3649f4339a3d76db88e85e39549f5b458b0a8b",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_ftps_A.pcap",
+            "original_sha256": "69f048a986f0de460c893e016d10e84aa5a63649b5066b654bca70b901eec983",
+            "original_bytes": 94380369,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_ftps_A.pcap",
+              "size": 94380369,
+              "crc": 2764565405
+            },
+            "sha256": "69f048a986f0de460c893e016d10e84aa5a63649b5066b654bca70b901eec983",
+            "provenance_domain_id": "0f81839f30b444dbec78334b526127a849beb220575f0f2f9b834c0bd3870043",
+            "records": 102569
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_ftps_B.pcap",
+            "relative_path": "ISCX/pcap/vpn_ftps_B.pcap",
+            "label": "vpn_ftps_b",
+            "file_id": "bf4ba4ddc7fd489e5918752920edd63ba37b90cf86d36656fd9f89cdcc43fd95",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_ftps_B.pcap",
+            "original_sha256": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+            "original_bytes": 82635430,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_ftps_B.pcap",
+              "size": 82635430,
+              "crc": 1313360304
+            },
+            "sha256": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+            "provenance_domain_id": "0f81839f30b444dbec78334b526127a849beb220575f0f2f9b834c0bd3870043",
+            "records": 88685
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_hangouts_audio1",
+      "accepted": 3199,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_hangouts_audio1": 3199
+      },
+      "sessions_by_label": {
+        "vpn_hangouts_audio1": 3199
+      },
+      "source_groups_by_label": {
+        "vpn_hangouts_audio1": 3172
+      },
+      "flags": {
+        "one_or_two_packet_samples": 3066,
+        "missing_initial_syn": 9
+      },
+      "packet_counts": {
+        "records": 446669,
+        "decoded": 446476,
+        "rejected": 193,
+        "reasons": {
+          "non_TCP_UDP": 193
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_audio1.pcap",
+            "relative_path": "ISCX/pcap/vpn_hangouts_audio1.pcap",
+            "label": "vpn_hangouts_audio1",
+            "file_id": "a1a6bdd49ca69ecc554332976cd3ba89700b010e59f81343b9019fe070dcdff6",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_audio1.pcap",
+            "original_sha256": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+            "original_bytes": 71870096,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_hangouts_audio1.pcap",
+              "size": 71870096,
+              "crc": 1515628993
+            },
+            "sha256": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+            "provenance_domain_id": "86bdcf2f95ab04d6b872b5d4f60306245586cf003e3cff8dc080b5002ba1b47f",
+            "records": 446669
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_hangouts_audio2",
+      "accepted": 5061,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_hangouts_audio2": 5061
+      },
+      "sessions_by_label": {
+        "vpn_hangouts_audio2": 5061
+      },
+      "source_groups_by_label": {
+        "vpn_hangouts_audio2": 4948
+      },
+      "flags": {
+        "one_or_two_packet_samples": 4880,
+        "missing_initial_syn": 72
+      },
+      "packet_counts": {
+        "records": 479063,
+        "decoded": 478794,
+        "rejected": 269,
+        "reasons": {
+          "non_TCP_UDP": 269
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_audio2.pcap",
+            "relative_path": "ISCX/pcap/vpn_hangouts_audio2.pcap",
+            "label": "vpn_hangouts_audio2",
+            "file_id": "278860a5ccbdda43cc4fb68d2ec66841cecf52140b42f2dc76d688b91be0ce05",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_audio2.pcap",
+            "original_sha256": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+            "original_bytes": 97785336,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_hangouts_audio2.pcap",
+              "size": 97785336,
+              "crc": 3259155660
+            },
+            "sha256": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+            "provenance_domain_id": "3a028b73852e536e93d5536d5167a7f7393be7f8f09227bb359c5c0fad07fd2c",
+            "records": 479063
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "ISCX",
+      "family": "vpn_hangouts_chat1",
+      "accepted": 2793,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "vpn_hangouts_chat1b": 1489,
+        "vpn_hangouts_chat1a": 1304
+      },
+      "sessions_by_label": {
+        "vpn_hangouts_chat1b": 1489,
+        "vpn_hangouts_chat1a": 1304
+      },
+      "source_groups_by_label": {
+        "vpn_hangouts_chat1b": 1472,
+        "vpn_hangouts_chat1a": 1279
+      },
+      "flags": {
+        "one_or_two_packet_samples": 2686,
+        "missing_initial_syn": 33
+      },
+      "packet_counts": {
+        "records": 44951,
+        "decoded": 44893,
+        "rejected": 58,
+        "reasons": {
+          "non_TCP_UDP": 58
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_chat1a.pcap",
+            "relative_path": "ISCX/pcap/vpn_hangouts_chat1a.pcap",
+            "label": "vpn_hangouts_chat1a",
+            "file_id": "e2db678aea7e2eedd0f1481f63d5a256408bd997fea6eb7569a7dc887d0b70a2",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_chat1a.pcap",
+            "original_sha256": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+            "original_bytes": 13708539,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_hangouts_chat1a.pcap",
+              "size": 13708539,
+              "crc": 2991494706
+            },
+            "sha256": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+            "provenance_domain_id": "38efee4f73be726d2df4ed0175682587cb1db1615c1b9314ba3c854f169e5ea2",
+            "records": 27408
+          },
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_chat1b.pcap",
+            "relative_path": "ISCX/pcap/vpn_hangouts_chat1b.pcap",
+            "label": "vpn_hangouts_chat1b",
+            "file_id": "4b5ce4270069a43ebfe536ecece067410cfdb60df2c74564b50b9bbbae903995",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/vpn_hangouts_chat1b.pcap",
+            "original_sha256": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+            "original_bytes": 6194348,
+            "restored_from_archive": false,
+            "archive": {
+              "archive": "/home/zzu/zyz_workspace/TNSM/data/ISCX/pcap/VPN-PCAPS-01.zip",
+              "member": "vpn_hangouts_chat1b.pcap",
+              "size": 6194348,
+              "crc": 1452843143
+            },
+            "sha256": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+            "provenance_domain_id": "38efee4f73be726d2df4ed0175682587cb1db1615c1b9314ba3c854f169e5ea2",
+            "records": 17543
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    }
+  ],
+  "before_conflict_samples": 126314,
+  "cross_label_hash_groups": 1,
+  "excluded_conflict_records": 4,
+  "retained": 115763,
+  "uncertain_continuation_edges": 549,
+  "class_groups": [
+    {
+      "label": "facebook_audio4",
+      "samples": 108442,
+      "observed_sessions": 108442,
+      "source_groups": 78797,
+      "components": 78787
+    },
+    {
+      "label": "vpn_bittorrent",
+      "samples": 487,
+      "observed_sessions": 487,
+      "source_groups": 477,
+      "components": 477
+    },
+    {
+      "label": "vpn_email2b",
+      "samples": 153,
+      "observed_sessions": 153,
+      "source_groups": 150,
+      "components": 150
+    },
+    {
+      "label": "vpn_facebook_audio2",
+      "samples": 1552,
+      "observed_sessions": 1552,
+      "source_groups": 1335,
+      "components": 1335
+    },
+    {
+      "label": "vpn_ftps_a",
+      "samples": 68,
+      "observed_sessions": 68,
+      "source_groups": 67,
+      "components": 67
+    },
+    {
+      "label": "vpn_hangouts_audio2",
+      "samples": 5061,
+      "observed_sessions": 5061,
+      "source_groups": 4948,
+      "components": 4948
+    }
+  ],
+  "folds": [
+    {
+      "outer_fold": "round0",
+      "roles": {
+        "Train": [
+          "facebook_audio4",
+          "vpn_facebook_audio2",
+          "vpn_email2b",
+          "vpn_ftps_a"
+        ],
+        "Val": [
+          "facebook_audio4",
+          "vpn_hangouts_audio2"
+        ],
+        "Test": [
+          "facebook_audio4",
+          "vpn_bittorrent"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 67134,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10700
+        },
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10975
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_bittorrent",
+          "pool": "query",
+          "n": 247
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_bittorrent",
+          "pool": "support",
+          "n": 240
+        },
+        {
+          "partition": "Train",
+          "label": "facebook_audio4",
+          "pool": "training",
+          "n": 65361
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_email2b",
+          "pool": "training",
+          "n": 153
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_facebook_audio2",
+          "pool": "training",
+          "n": 1552
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_ftps_a",
+          "pool": "training",
+          "n": 68
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10552
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10854
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_hangouts_audio2",
+          "pool": "query",
+          "n": 2543
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_hangouts_audio2",
+          "pool": "support",
+          "n": 2518
+        }
+      ]
+    },
+    {
+      "outer_fold": "round1",
+      "roles": {
+        "Train": [
+          "facebook_audio4",
+          "vpn_bittorrent",
+          "vpn_email2b",
+          "vpn_ftps_a"
+        ],
+        "Val": [
+          "facebook_audio4",
+          "vpn_facebook_audio2"
+        ],
+        "Test": [
+          "facebook_audio4",
+          "vpn_hangouts_audio2"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 66069,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10710
+        },
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10965
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_hangouts_audio2",
+          "pool": "query",
+          "n": 2507
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_hangouts_audio2",
+          "pool": "support",
+          "n": 2554
+        },
+        {
+          "partition": "Train",
+          "label": "facebook_audio4",
+          "pool": "training",
+          "n": 65361
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_bittorrent",
+          "pool": "training",
+          "n": 487
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_email2b",
+          "pool": "training",
+          "n": 153
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_ftps_a",
+          "pool": "training",
+          "n": 68
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10850
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10556
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_facebook_audio2",
+          "pool": "query",
+          "n": 732
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_facebook_audio2",
+          "pool": "support",
+          "n": 820
+        }
+      ]
+    },
+    {
+      "outer_fold": "round2",
+      "roles": {
+        "Train": [
+          "facebook_audio4",
+          "vpn_bittorrent",
+          "vpn_hangouts_audio2",
+          "vpn_ftps_a"
+        ],
+        "Val": [
+          "facebook_audio4",
+          "vpn_email2b"
+        ],
+        "Test": [
+          "facebook_audio4",
+          "vpn_facebook_audio2"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 70977,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10668
+        },
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 11007
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_facebook_audio2",
+          "pool": "query",
+          "n": 782
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_facebook_audio2",
+          "pool": "support",
+          "n": 770
+        },
+        {
+          "partition": "Train",
+          "label": "facebook_audio4",
+          "pool": "training",
+          "n": 65361
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_bittorrent",
+          "pool": "training",
+          "n": 487
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_ftps_a",
+          "pool": "training",
+          "n": 68
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_hangouts_audio2",
+          "pool": "training",
+          "n": 5061
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10429
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10977
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_email2b",
+          "pool": "query",
+          "n": 83
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_email2b",
+          "pool": "support",
+          "n": 70
+        }
+      ]
+    },
+    {
+      "outer_fold": "round3",
+      "roles": {
+        "Train": [
+          "facebook_audio4",
+          "vpn_bittorrent",
+          "vpn_hangouts_audio2",
+          "vpn_facebook_audio2"
+        ],
+        "Val": [
+          "facebook_audio4",
+          "vpn_ftps_a"
+        ],
+        "Test": [
+          "facebook_audio4",
+          "vpn_email2b"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 72461,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 11122
+        },
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10553
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_email2b",
+          "pool": "query",
+          "n": 73
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_email2b",
+          "pool": "support",
+          "n": 80
+        },
+        {
+          "partition": "Train",
+          "label": "facebook_audio4",
+          "pool": "training",
+          "n": 65361
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_bittorrent",
+          "pool": "training",
+          "n": 487
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_facebook_audio2",
+          "pool": "training",
+          "n": 1552
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_hangouts_audio2",
+          "pool": "training",
+          "n": 5061
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10541
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10865
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_ftps_a",
+          "pool": "query",
+          "n": 28
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_ftps_a",
+          "pool": "support",
+          "n": 40
+        }
+      ]
+    },
+    {
+      "outer_fold": "round4",
+      "roles": {
+        "Train": [
+          "facebook_audio4",
+          "vpn_hangouts_audio2",
+          "vpn_facebook_audio2",
+          "vpn_email2b"
+        ],
+        "Val": [
+          "facebook_audio4",
+          "vpn_bittorrent"
+        ],
+        "Test": [
+          "facebook_audio4",
+          "vpn_ftps_a"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 72127,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10771
+        },
+        {
+          "partition": "Test",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10904
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_ftps_a",
+          "pool": "query",
+          "n": 38
+        },
+        {
+          "partition": "Test",
+          "label": "vpn_ftps_a",
+          "pool": "support",
+          "n": 30
+        },
+        {
+          "partition": "Train",
+          "label": "facebook_audio4",
+          "pool": "training",
+          "n": 65361
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_email2b",
+          "pool": "training",
+          "n": 153
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_facebook_audio2",
+          "pool": "training",
+          "n": 1552
+        },
+        {
+          "partition": "Train",
+          "label": "vpn_hangouts_audio2",
+          "pool": "training",
+          "n": 5061
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "query",
+          "n": 10916
+        },
+        {
+          "partition": "Val",
+          "label": "facebook_audio4",
+          "pool": "support",
+          "n": 10490
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_bittorrent",
+          "pool": "query",
+          "n": 231
+        },
+        {
+          "partition": "Val",
+          "label": "vpn_bittorrent",
+          "pool": "support",
+          "n": 256
+        }
+      ]
+    }
+  ],
+  "training_episode_and_model_selection_audit": "NOT_EXECUTED; no training started; common budgets/configs required before training",
+  "limitations": [
+    "observed connections, not authenticated complete application sessions",
+    "capture/host independence not claimed",
+    "group-count ratios do not imply exact sample ratios"
+  ]
+}

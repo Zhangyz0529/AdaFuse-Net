@@ -1,0 +1,26 @@
+{
+  "MFF": {
+    "status": "PASS_END_TO_END",
+    "check": "2 native-loss updates plus paired Val/Test Clean+IBP30; softmax support fitting, no shared prototype classifier"
+  },
+  "GP-VAE": {
+    "status": "PASS_END_TO_END",
+    "check": "official generative+discriminative loss2updates, support-fitted Gaussian means, native KL evaluation"
+  },
+  "FlowPic": {
+    "status": "PASS_END_TO_END",
+    "completion_marker": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/smoke/USTC/FlowPic/seed42/round0/shot1/COMPLETE.json",
+    "scope": "interface check, excluded from formal tables"
+  },
+  "Trafficformer-Light": {
+    "status": "PASS_END_TO_END",
+    "completion_marker": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/smoke/USTC/Trafficformer-Light/seed42/round0/shot1/COMPLETE.json",
+    "scope": "interface check, excluded from formal tables"
+  },
+  "MetaTraffic": {
+    "status": "V3_SHORT_SMOKE_PASS_BUT_FULL_RUN_FAILED; V4_FULL_BUDGET_GATE_PENDING",
+    "current_status_file": "CURRENT_STATUS.json",
+    "retirement_evidence": "META_V3_RETIREMENT.json",
+    "new_gate": "100native outer updates plus support-only adaptation and paired Clean validation/test check"
+  }
+}

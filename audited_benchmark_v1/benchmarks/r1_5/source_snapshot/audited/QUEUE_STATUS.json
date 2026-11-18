@@ -1,0 +1,50 @@
+{
+  "time": 1794970602.3743675,
+  "pid": 1310961,
+  "active": [
+    {
+      "key": "V4_ISCX_MetaTraffic_42_round1_shot10",
+      "dataset": "ISCX",
+      "model": "MetaTraffic",
+      "seed": 42,
+      "fold": 1,
+      "shot": 10,
+      "gpu": 0,
+      "command": [
+        "/home/zzu/.conda/envs/zyz_env/bin/python",
+        "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/worker_v4.py",
+        "--dataset",
+        "ISCX",
+        "--fold",
+        "round1",
+        "--shot",
+        "10",
+        "--seed",
+        "42",
+        "--model",
+        "MetaTraffic",
+        "--device",
+        "cuda:0"
+      ],
+      "start": 1794970258.8134122,
+      "output_dir": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/runs/ISCX/MetaTraffic/seed42/round1/shot10",
+      "smoke": false,
+      "implementation_version": "native_common_input_fewshot_v4",
+      "pid": 1770980
+    }
+  ],
+  "ready": [
+    "USTC",
+    "ISCX",
+    "CIC_IDS"
+  ],
+  "waiting": {
+    "CIC_DDOS": "WAIT_PARTITION_GATE",
+    "CIC_DOH": "WAIT_PARTITION_GATE"
+  },
+  "pending_ready_jobs": 192,
+  "failed_this_session": [],
+  "external_models": "5 native adaptations plus user-authorized original Pre-Contrast-Local, all subject to versioned checks",
+  "max_per_gpu": 2,
+  "RF_workers": 2
+}

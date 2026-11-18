@@ -1,0 +1,7 @@
+{
+  "pid": 1058864,
+  "time": 1794919623.6050923,
+  "authorization": "User requested automatic continuation after CIC_IDS generation",
+  "signal": "SIGCONT",
+  "mixed_supervisor_remains_paused": true
+}

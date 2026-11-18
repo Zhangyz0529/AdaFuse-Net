@@ -1,0 +1,36 @@
+{
+  "policy": {
+    "ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "split_seed": 42,
+    "pool_seed": 3407,
+    "episode_seed": 3407,
+    "minimum_samples_per_partition_class": 50,
+    "minimum_components_per_class": 5,
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "query_per_class": 15,
+    "evaluation_episodes_per_task_shot": 100,
+    "calibration_pool": "none; no calibration used; no fitted decision threshold in preparation",
+    "outer_tasks": "heldout attack Test; next attack Val; other attacks Train; BENIGN all roles with disjoint samples/groups",
+    "grouping": "session, conservative same-domain bidirectional tuple, exact model input, identical raw packet content, explicit uncertain-continuation edges",
+    "blocked_domains": "excluded by fixed source-evidence rule only; named in scope table; never by model score",
+    "no_seed_retries": true,
+    "training_allowed": false
+  },
+  "code_sha256": {
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/prepare_partitions.py": "3a5deb9f1451d9203f77dda16f95de400a2c69267106558eb87fe729b1ac8e2e",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/watch_partitions.py": "56df774b4028f6935708d32bb4a251653c7ba8166393d5629612147ee6e65f5c",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/test_partition_gate.py": "e98d49a25f5d1d00c7e01f314f5da3298fe9abeb422bec92113000508b48ab12",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/run.py": "a3c0adcfa693b6562251e1e484e8092286b58020a0b93daa040b01c684cc15f3",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_session_rebuild_v3/full_rebuild/window_index.py": "afb75a5faaf1e6d76819dbd04eea137e839d407f8e49868ac301497ac592b37f"
+  },
+  "frozen_before_real_split": true
+}

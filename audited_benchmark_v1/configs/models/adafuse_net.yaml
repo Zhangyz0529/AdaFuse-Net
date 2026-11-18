@@ -1,0 +1,6 @@
+embed_dim: 256
+stat_dim: 77
+expert_scalar_initialization: 1.0
+expert_scalar_constraints: none
+modality_gate: independent_sigmoid
+normalization_epsilon: 1.0e-12

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this software release; article publication metadata is not included."
+title: "AdaFuse-Net reproducibility implementation"
+type: software
+version: 0.1.0
+authors:
+  - name: "AdaFuse-Net contributors"
+license: MIT

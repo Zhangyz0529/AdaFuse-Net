@@ -1,0 +1,7 @@
+{
+  "dataset": "ISCX",
+  "fold": "round0",
+  "steps": 100,
+  "status": "EXACT_EQUAL_TO_ESTABLISHED_ADAFUSE_PLAN",
+  "compared": "all classes, support/query IDs and ordering for100steps"
+}

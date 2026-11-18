@@ -1,0 +1,13 @@
+{
+  "dataset": "ISCX",
+  "seed": 42,
+  "fold": "round0",
+  "shot": 1,
+  "device": "cpu",
+  "episodes_per_role_condition": 2,
+  "rows": 8,
+  "prediction_mismatches": 0,
+  "max_abs_f1_difference": 0.0,
+  "passed": true,
+  "scope": "checkpoint reload evaluation, limited to recorded dataset/seed/fold/shot/episodes; not retraining"
+}

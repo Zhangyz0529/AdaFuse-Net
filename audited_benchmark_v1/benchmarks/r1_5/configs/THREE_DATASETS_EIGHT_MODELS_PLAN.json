@@ -1,0 +1,200 @@
+{
+  "created": 1794931136.4812884,
+  "instruction": "Complete all eight models on USTC, ISCX and CIC_IDS; retain existing future dataset queue.",
+  "expected_formal_combinations": 2240,
+  "seeds": [
+    42,
+    3407,
+    2026,
+    123,
+    5678
+  ],
+  "shots": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "gpu_max_tasks_each": 2,
+  "primary": "Clean Macro F1",
+  "secondary": "IBP30 for byte-input methods; FlowPic and MetaTraffic size/time inputs do not expose byte-replacement condition",
+  "validation_and_test_episodes_per_shot": 100,
+  "query_per_class": 15,
+  "checkpoint": "last update100 for neural methods; method-specific update semantics retained",
+  "model_identity": "Pre-Contrast-Local is original project code, other native adaptations documented separately; no official-equivalence claim",
+  "pending_checks": [
+    "MetaTraffic full100-update stability gate",
+    "CIC_IDS native packet-pattern input preparation for MetaTraffic and Trafficformer-Light"
+  ],
+  "summary": [
+    {
+      "dataset": "USTC",
+      "model": "AdaFuse-Net",
+      "expected": 80,
+      "complete": 80,
+      "running": 0
+    },
+    {
+      "dataset": "USTC",
+      "model": "MFF",
+      "expected": 80,
+      "complete": 51,
+      "running": 1
+    },
+    {
+      "dataset": "USTC",
+      "model": "GP-VAE",
+      "expected": 80,
+      "complete": 26,
+      "running": 1
+    },
+    {
+      "dataset": "USTC",
+      "model": "MetaTraffic",
+      "expected": 80,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "USTC",
+      "model": "Pre-Contrast-Local",
+      "expected": 80,
+      "complete": 3,
+      "running": 0
+    },
+    {
+      "dataset": "USTC",
+      "model": "Trafficformer-Light",
+      "expected": 80,
+      "complete": 20,
+      "running": 0
+    },
+    {
+      "dataset": "USTC",
+      "model": "FlowPic",
+      "expected": 80,
+      "complete": 24,
+      "running": 1
+    },
+    {
+      "dataset": "USTC",
+      "model": "RandomForest",
+      "expected": 80,
+      "complete": 80,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "AdaFuse-Net",
+      "expected": 100,
+      "complete": 100,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "MFF",
+      "expected": 100,
+      "complete": 21,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "GP-VAE",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "MetaTraffic",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "Pre-Contrast-Local",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "Trafficformer-Light",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "FlowPic",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "ISCX",
+      "model": "RandomForest",
+      "expected": 100,
+      "complete": 28,
+      "running": 2
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "AdaFuse-Net",
+      "expected": 100,
+      "complete": 6,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "MFF",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "GP-VAE",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "MetaTraffic",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "Pre-Contrast-Local",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "Trafficformer-Light",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "FlowPic",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    },
+    {
+      "dataset": "CIC_IDS",
+      "model": "RandomForest",
+      "expected": 100,
+      "complete": 0,
+      "running": 0
+    }
+  ],
+  "scope_note": "This target plan supersedes outdated external_blocked and GPU3 fields in historical PROTOCOL.json; historical frozen file retained unchanged."
+}

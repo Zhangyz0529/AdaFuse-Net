@@ -1,0 +1,6 @@
+{
+  "time": 1794929769.6875322,
+  "prior_failures_retained": true,
+  "numerical_patch_only": "clamped log ratio for KL in private copied native trainer, unmodified author repo preserved",
+  "must_pass_new_smoke": true
+}

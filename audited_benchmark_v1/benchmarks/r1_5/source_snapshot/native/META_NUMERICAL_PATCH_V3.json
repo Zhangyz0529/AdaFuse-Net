@@ -1,0 +1,25 @@
+{
+  "reason": "author code smoke produced nonfinite update before formal MetaTraffic runs",
+  "changes": [
+    [
+      "torch.log(sc_train[c] / sc_test[c])",
+      "(sc_train[c].clamp_min(1e-12).log() - sc_test[c].clamp_min(1e-12).log())"
+    ],
+    [
+      "torch.log(sc_test[c] / sc_train[c])",
+      "(sc_test[c].clamp_min(1e-12).log() - sc_train[c].clamp_min(1e-12).log())"
+    ],
+    [
+      "torch.log(mu_set_c_train / mu_set_c_test)",
+      "(mu_set_c_train.clamp_min(1e-12).log() - mu_set_c_test.clamp_min(1e-12).log())"
+    ],
+    [
+      "torch.log(mu_set_c_test / mu_set_c_train)",
+      "(mu_set_c_test.clamp_min(1e-12).log() - mu_set_c_train.clamp_min(1e-12).log())"
+    ]
+  ],
+  "scope": "log-ratio KL uses clamped log probabilities to avoid0/0, log0; architecture and native IMP/ATS/AUG unchanged",
+  "original_author_code_untouched": true,
+  "prior_failed_check_retained": true,
+  "not_a_performance_selected_configuration": true
+}

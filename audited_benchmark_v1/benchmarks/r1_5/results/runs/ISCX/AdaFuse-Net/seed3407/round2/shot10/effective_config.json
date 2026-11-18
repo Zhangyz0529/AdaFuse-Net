@@ -1,0 +1,74 @@
+{
+  "dataset": "ISCX",
+  "model": "AdaFuse-Net",
+  "seed": 3407,
+  "fold": "round2",
+  "shot": 10,
+  "protocol": {
+    "version": "audited_benchmark_v1",
+    "scope": "fixed-configuration subset; external named methods blocked until fidelity audit",
+    "seeds": [
+      42,
+      3407,
+      2026,
+      123,
+      5678
+    ],
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "conditions": [
+      "Clean",
+      "IBP30"
+    ],
+    "primary": "Clean MacroF1; IBP30 secondary, all shots reported",
+    "episodes_per_role_shot": 100,
+    "query_per_class": 15,
+    "noise_seed": 20261028,
+    "IBP30_definition": "published input-space independent byte replacement, Bernoulli probability0.3, sequence only, query only, support clean; not PCAP-valid edits",
+    "checkpoint": "last update100; no test or validation selection",
+    "configuration_source": "/home/zzu/zyz_workspace/TNSM/reproducibility/AdaFuse-Net-Repro/configs/default.yaml",
+    "configuration_comparison": "fixed published common configuration, not per-method HPO; no50-trial Optuna claim",
+    "adafuse": {
+      "embed_dim": 256,
+      "updates": 100,
+      "lr": 0.00034175442135711044,
+      "weight_decay": 0.0004037481099025802,
+      "temperature": 0.1594433459844592,
+      "lambda_scl": 0.8381459098105098,
+      "lambda_regularizer": 0.006117688080773715
+    },
+    "budget_amendment": "published default50 changed to100 before any new training; fixed last checkpoint",
+    "RF": {
+      "n_estimators": 100,
+      "max_features": "sqrt",
+      "n_jobs": 1,
+      "fit": "episode support only; no global training needed for novel binary labels",
+      "seeds_interpretation": "estimator RNG repeats, NOT independent pretrained training runs"
+    },
+    "input": "fold Train-fitted25/77/29 raw statistics plus anonymized512-byte tokens; no extra positional masking; RF sequence /255",
+    "training_episode_plan": "fixed3407 per fold/shot with group-disjoint per-label support/query pools; max10 support15 query; class roles from supplied manifest",
+    "aggregate": "episode mean then equal task mean per seed/shot, then seed mean and sampleSD; RF separate estimator-repeat interpretation",
+    "minimum_free_gpu_mib": 9000,
+    "gpu_max_tasks_each": 3,
+    "external_blocked": [
+      "MFF",
+      "GP-VAE",
+      "MetaTraffic",
+      "Pre-Contrast",
+      "Trafficformer-Light",
+      "FlowPic"
+    ],
+    "registration": "internal freeze before new experiment, not external preregistration"
+  },
+  "root": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/partitions/ISCX",
+  "gate_sha256": "9cf5a92b217fb0be571baee897f28c260ce1c4f551459923ea29aef48e85667e",
+  "manifest_sha256": "51865ba8f9c9eb33db08ee4c7e3f585d47538b6654d79981cdd87a5470884446",
+  "evaluation_plan_sha256": "f42e98ae6fa8336ce603670c71279ba4ddfb3016cef1447ae4094e1d6c0ddccd",
+  "worker_sha256": "0447288dd164500004a70a550fa24f50b7b59e15f15f23ffa516b33c391272b3",
+  "scaler_sha256": "34c9709607c7d617dbca4b8ac62a299a4bb262751fd1d4dbdc790471cc487bdf",
+  "smoke": false
+}

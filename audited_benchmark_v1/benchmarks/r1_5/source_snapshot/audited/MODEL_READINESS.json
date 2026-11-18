@@ -1,0 +1,46 @@
+{
+  "AdaFuse-Net": {
+    "status": "READY_FIXED_CONFIGURATION",
+    "implementation": "public FactorialNet + CE/SCL/Polar/Dec"
+  },
+  "RandomForest": {
+    "status": "READY_SUPPORT_FITTED_NATIVE",
+    "implementation": "sklearn RandomForestClassifier100trees"
+  },
+  "MFF": {
+    "status": "ENABLED_AFTER_END_TO_END_CHECK",
+    "implementation_version": "native_common_input_fewshot_v1; paper Table5, common-input adaptation",
+    "protocol_directory": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1"
+  },
+  "GP-VAE": {
+    "status": "ENABLED_AFTER_END_TO_END_CHECK",
+    "implementation_version": "native_common_input_fewshot_v1; pinned author Open-Detect core and losses",
+    "protocol_directory": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1"
+  },
+  "MetaTraffic": {
+    "status": "FULL_100_UPDATE_NUMERICAL_GATE_REQUIRED",
+    "implementation_version": "native_common_input_fewshot_v4",
+    "current_status_file": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/CURRENT_STATUS.json",
+    "prior_v3_formal_failure": "retained, not aggregated; META_V3_RETIREMENT.json"
+  },
+  "Pre-Contrast": {
+    "status": "AUTHOR_IMPLEMENTATION_UNAVAILABLE_LOCAL_VARIANT_AUTHORIZED",
+    "local_model_name": "Pre-Contrast-Local",
+    "reason": "Latest user instruction authorizes original project implementation; supersedes previous skip."
+  },
+  "Trafficformer-Light": {
+    "status": "ENABLED_AFTER_END_TO_END_CHECK",
+    "implementation_version": "native_common_input_fewshot_v2; author UER MLM/MSP, Train-only lightweight pretraining",
+    "protocol_directory": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1"
+  },
+  "FlowPic": {
+    "status": "ENABLED_AFTER_END_TO_END_CHECK",
+    "implementation_version": "native_common_input_fewshot_v2; native packet size/time histogram with shared sample boundary adaptation",
+    "protocol_directory": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1"
+  },
+  "Pre-Contrast-Local": {
+    "status": "ENABLED_AFTER_END_TO_END_CHECK",
+    "implementation_version": "original_project_precontrast_local_v1",
+    "protocol": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_native_baselines_v1/PRECONTRAST_LOCAL_PROTOCOL.json"
+  }
+}

@@ -1,0 +1,24 @@
+stat_dim: 77
+normal_label: BENIGN
+attack_classes:
+- PortScan
+- DDoS
+- FTP-Patator
+- SSH-Patator
+- DoS
+benign_mapping: []
+attack_mapping:
+  DoS Hulk: DoS
+  DoS GoldenEye: DoS
+name: CIC_IDS
+input: data/processed/cic_ids2017/dataset.pkl
+sequence_length: 512
+split_seed: 42
+split_protocol: class_rotate
+normal_split_ratios:
+- 0.6
+- 0.2
+- 0.2
+novel_classes_per_round: 1
+round_val_novel_classes: 1
+min_query_num: 15

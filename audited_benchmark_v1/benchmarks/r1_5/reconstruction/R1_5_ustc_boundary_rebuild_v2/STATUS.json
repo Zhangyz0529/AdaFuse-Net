@@ -1,0 +1,7 @@
+{
+  "stage": "ROLE_AUDIT_FINISHED",
+  "returncode": 0,
+  "report": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/partitions/USTC/PARTITION_GATE.json",
+  "time": 1794921973.794546,
+  "training_started": false
+}

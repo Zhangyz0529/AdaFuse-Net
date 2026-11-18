@@ -1,0 +1,5 @@
+{
+  "checkpoint_runs": 280,
+  "distinct_checkpoint_file_sha256": 280,
+  "scope": "file-level uniqueness; confirms no shared file substitution, not a full parameter-equivalence audit"
+}

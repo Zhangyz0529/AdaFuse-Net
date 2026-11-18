@@ -1,0 +1,28 @@
+{
+  "pid": 1108438,
+  "time": 1794919623.6958935,
+  "active_or_queued": [],
+  "finished": {
+    "Thursday": {
+      "domain": "Thursday",
+      "returncode": 0
+    },
+    "Monday": {
+      "domain": "Monday",
+      "returncode": 0
+    },
+    "Tuesday": {
+      "domain": "Tuesday",
+      "returncode": 0,
+      "mode": "attached_existing_worker"
+    },
+    "Wednesday": {
+      "domain": "Wednesday",
+      "returncode": 0,
+      "mode": "attached_existing_worker"
+    }
+  },
+  "Friday": "completed; see outputs/CIC_IDS/Friday/REBUILD_COMPLETE.json",
+  "CIC_DDOS": "SIGSTOP paused; no automatic resume",
+  "training_started": false
+}

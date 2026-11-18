@@ -1,0 +1,8 @@
+{
+  "partial_results": true,
+  "unit": "F1 in0..1; multiply100 for percent/pp",
+  "aggregation": "episodes->task->equal tasks per seed->seed mean/sampleSD",
+  "FlowPic_MetaTraffic_IBP30": "not applicable to native size/time input; missing is intentional, not zero drop evidence",
+  "RF_seed_unit": "estimator repeat, not independent pretrained training run",
+  "comparison": "audited common evaluation partitions; documented native/fewshot adaptations; not exact author table reproduction"
+}

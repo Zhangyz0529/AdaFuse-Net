@@ -1,0 +1,10 @@
+{
+  "remaining": [
+    "CIC_IDS",
+    "CIC_DDOS"
+  ],
+  "finished": {},
+  "training_started": false,
+  "optuna_started": false,
+  "time": 1794919594.9029691
+}

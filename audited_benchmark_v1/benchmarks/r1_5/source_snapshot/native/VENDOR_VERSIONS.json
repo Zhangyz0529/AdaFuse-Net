@@ -1,0 +1,18 @@
+{
+  "MetaTraffic": {
+    "commit": "8e1597bd1a5c0862d88b33ddf0ab7f2cccacd73b",
+    "origin": "https://github.com/FIND-Lab/MAML-Training-ETC.git"
+  },
+  "Open-Detect": {
+    "commit": "b50a18515a01799468c10f6c9b60c01f8a6a4e7c",
+    "origin": "https://github.com/niebikong/Open-Detect.git"
+  },
+  "FlowPic": {
+    "commit": "000927f707a204c868bbceb79cd621814bd98ad6",
+    "origin": "https://github.com/talshapira/FlowPic.git"
+  },
+  "TrafficFormer": {
+    "commit": "6d0ba64d82e74fb130c6c7301ef20885dbfbdf29",
+    "origin": "https://github.com/IDP-code/TrafficFormer.git"
+  }
+}

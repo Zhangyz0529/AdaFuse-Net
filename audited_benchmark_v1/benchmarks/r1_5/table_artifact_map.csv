@@ -1,0 +1,3 @@
+paper_table,partition_version,implementation,runs,assets,verification
+NEW_MAIN_CLEAN_COMPARISON,task_role_v1 / declared source boundary versions,see run_index.csv and source_snapshot,benchmarks/r1_5/run_index.csv,release_assets/artifact_index.csv,"saved metric aggregation; representative 2-episode checkpoint checks, see verification; not full retraining"
+NEW_SECONDARY_IBP30_COMPARISON,same as clean,byte-input methods only,same run index; FlowPic/MetaTraffic not applicable,same assets,see per-dataset verification reports; no full-table checkpoint reevaluation claim

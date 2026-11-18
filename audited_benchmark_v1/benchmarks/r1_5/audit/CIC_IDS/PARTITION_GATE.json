@@ -1,0 +1,1054 @@
+{
+  "dataset": "CIC_IDS",
+  "status": "PASS_PARTITIONS_AND_EVALUATION_POOLS",
+  "policy": {
+    "version": "task_role_v1",
+    "amendment": "source-count feasibility, before any model training; preserve old global-split failure reports",
+    "partition_assignment": "attack/target components assigned whole to their fold role; reference-only components use60/20/20; conflicting-role components all excluded",
+    "ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "split_seed": 42,
+    "pool_seed": 3407,
+    "episode_seed": 3407,
+    "minimum_samples_per_partition_class": 25,
+    "minimum_components_per_class": 2,
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "query_per_class": 15,
+    "evaluation_episodes_per_task_shot": 100,
+    "calibration_pool": "none; no calibration used; no fitted decision threshold in preparation",
+    "outer_tasks": "registry target Test; next target Val; remaining targets Train; dataset reference in all roles with disjoint groups",
+    "grouping": "session, conservative same-domain bidirectional tuple, exact model input, identical raw packet content, explicit uncertain-continuation edges",
+    "blocked_domains": "excluded by fixed source-evidence rule only; named in scope table; never by model score",
+    "no_seed_retries": true,
+    "training_allowed": false
+  },
+  "training_allowed": false,
+  "optuna_allowed": false,
+  "source_scope": [
+    {
+      "dataset": "CIC_IDS",
+      "domain": "Monday",
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "source_policy": "CERTIFIED_FOR_DECLARED_SCOPE",
+      "accepted": 478817,
+      "matching_or_scope_rejected": 50769,
+      "parse_rejected": 332,
+      "csv_total": 529918,
+      "independent_observed_sessions_by_label": {
+        "BENIGN": 314752
+      },
+      "conservative_tuple_source_groups_by_label": {
+        "BENIGN": 218605
+      },
+      "flags": {
+        "missing_initial_syn": 4852,
+        "closed_control_tail_packets": 144554,
+        "one_or_two_packet_records": 180830
+      },
+      "training_allowed": false,
+      "scaler_fitted": false,
+      "formal_split_generated": false,
+      "counts_close": true
+    },
+    {
+      "dataset": "CIC_IDS",
+      "domain": "Tuesday",
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "source_policy": "CERTIFIED_FOR_DECLARED_SCOPE",
+      "accepted": 402755,
+      "matching_or_scope_rejected": 42821,
+      "parse_rejected": 333,
+      "csv_total": 445909,
+      "independent_observed_sessions_by_label": {
+        "BENIGN": 271200,
+        "FTP-Patator": 4001,
+        "SSH-Patator": 2978
+      },
+      "conservative_tuple_source_groups_by_label": {
+        "BENIGN": 182372,
+        "FTP-Patator": 3990,
+        "SSH-Patator": 2978
+      },
+      "flags": {
+        "missing_initial_syn": 3055,
+        "closed_control_tail_packets": 102769,
+        "one_or_two_packet_records": 150390
+      },
+      "training_allowed": false,
+      "scaler_fitted": false,
+      "formal_split_generated": false,
+      "counts_close": true
+    },
+    {
+      "dataset": "CIC_IDS",
+      "domain": "Wednesday",
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "source_policy": "CERTIFIED_FOR_DECLARED_SCOPE",
+      "accepted": 487767,
+      "matching_or_scope_rejected": 204585,
+      "parse_rejected": 351,
+      "csv_total": 692703,
+      "independent_observed_sessions_by_label": {
+        "BENIGN": 270966,
+        "DoS": 83755
+      },
+      "conservative_tuple_source_groups_by_label": {
+        "BENIGN": 185035,
+        "DoS": 14108
+      },
+      "flags": {
+        "missing_initial_syn": 1616,
+        "closed_control_tail_packets": 113546,
+        "one_or_two_packet_records": 201802
+      },
+      "training_allowed": false,
+      "scaler_fitted": false,
+      "formal_split_generated": false,
+      "counts_close": true
+    },
+    {
+      "dataset": "CIC_IDS",
+      "domain": "Thursday",
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "source_policy": "CERTIFIED_FOR_DECLARED_SCOPE",
+      "accepted": 413007,
+      "matching_or_scope_rejected": 45520,
+      "parse_rejected": 289043,
+      "csv_total": 747570,
+      "independent_observed_sessions_by_label": {
+        "BENIGN": 307558
+      },
+      "conservative_tuple_source_groups_by_label": {
+        "BENIGN": 228956
+      },
+      "flags": {
+        "missing_initial_syn": 1692,
+        "closed_control_tail_packets": 97369,
+        "one_or_two_packet_records": 163498
+      },
+      "training_allowed": false,
+      "scaler_fitted": false,
+      "formal_split_generated": false,
+      "counts_close": true
+    },
+    {
+      "dataset": "CIC_IDS",
+      "domain": "Friday",
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "source_policy": "CERTIFIED_FOR_DECLARED_SCOPE",
+      "accepted": 618140,
+      "matching_or_scope_rejected": 84751,
+      "parse_rejected": 354,
+      "csv_total": 703245,
+      "independent_observed_sessions_by_label": {
+        "PortScan": 158620,
+        "BENIGN": 256407,
+        "DDoS": 80777
+      },
+      "conservative_tuple_source_groups_by_label": {
+        "PortScan": 158431,
+        "BENIGN": 176805,
+        "DDoS": 45377
+      },
+      "flags": {
+        "missing_initial_syn": 1014,
+        "closed_control_tail_packets": 64272,
+        "one_or_two_packet_records": 280101
+      },
+      "training_allowed": false,
+      "scaler_fitted": false,
+      "formal_split_generated": false,
+      "counts_close": true
+    }
+  ],
+  "before_conflict_samples": 2400486,
+  "cross_label_hash_groups": 0,
+  "excluded_conflict_records": 0,
+  "retained": 2400486,
+  "uncertain_continuation_edges": 36795,
+  "class_groups": [
+    {
+      "label": "BENIGN",
+      "samples": 2025699,
+      "observed_sessions": 1420883,
+      "source_groups": 991773,
+      "components": 991759
+    },
+    {
+      "label": "DDoS",
+      "samples": 104678,
+      "observed_sessions": 80777,
+      "source_groups": 45377,
+      "components": 45377
+    },
+    {
+      "label": "DoS",
+      "samples": 98257,
+      "observed_sessions": 83755,
+      "source_groups": 14108,
+      "components": 14108
+    },
+    {
+      "label": "FTP-Patator",
+      "samples": 7412,
+      "observed_sessions": 4001,
+      "source_groups": 3990,
+      "components": 3990
+    },
+    {
+      "label": "PortScan",
+      "samples": 158680,
+      "observed_sessions": 158620,
+      "source_groups": 158431,
+      "components": 158431
+    },
+    {
+      "label": "SSH-Patator",
+      "samples": 5760,
+      "observed_sessions": 2978,
+      "source_groups": 2978,
+      "components": 2978
+    }
+  ],
+  "folds": [
+    {
+      "outer_fold": "round0",
+      "roles": {
+        "Train": [
+          "BENIGN",
+          "FTP-Patator",
+          "SSH-Patator",
+          "DoS"
+        ],
+        "Val": [
+          "BENIGN",
+          "DDoS"
+        ],
+        "Test": [
+          "BENIGN",
+          "PortScan"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 1319067,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 199879
+        },
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 200619
+        },
+        {
+          "partition": "Test",
+          "label": "PortScan",
+          "pool": "query",
+          "n": 79029
+        },
+        {
+          "partition": "Test",
+          "label": "PortScan",
+          "pool": "support",
+          "n": 79326
+        },
+        {
+          "partition": "Train",
+          "label": "BENIGN",
+          "pool": "training",
+          "n": 1207638
+        },
+        {
+          "partition": "Train",
+          "label": "DoS",
+          "pool": "training",
+          "n": 98257
+        },
+        {
+          "partition": "Train",
+          "label": "FTP-Patator",
+          "pool": "training",
+          "n": 7412
+        },
+        {
+          "partition": "Train",
+          "label": "SSH-Patator",
+          "pool": "training",
+          "n": 5760
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 208167
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 209272
+        },
+        {
+          "partition": "Val",
+          "label": "DDoS",
+          "pool": "query",
+          "n": 52082
+        },
+        {
+          "partition": "Val",
+          "label": "DDoS",
+          "pool": "support",
+          "n": 51927
+        }
+      ]
+    },
+    {
+      "outer_fold": "round1",
+      "roles": {
+        "Train": [
+          "BENIGN",
+          "PortScan",
+          "SSH-Patator",
+          "DoS"
+        ],
+        "Val": [
+          "BENIGN",
+          "FTP-Patator"
+        ],
+        "Test": [
+          "BENIGN",
+          "DDoS"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 1468644,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 208728
+        },
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 208466
+        },
+        {
+          "partition": "Test",
+          "label": "DDoS",
+          "pool": "query",
+          "n": 51930
+        },
+        {
+          "partition": "Test",
+          "label": "DDoS",
+          "pool": "support",
+          "n": 52079
+        },
+        {
+          "partition": "Train",
+          "label": "BENIGN",
+          "pool": "training",
+          "n": 1206272
+        },
+        {
+          "partition": "Train",
+          "label": "DoS",
+          "pool": "training",
+          "n": 98257
+        },
+        {
+          "partition": "Train",
+          "label": "PortScan",
+          "pool": "training",
+          "n": 158355
+        },
+        {
+          "partition": "Train",
+          "label": "SSH-Patator",
+          "pool": "training",
+          "n": 5760
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 201218
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 200891
+        },
+        {
+          "partition": "Val",
+          "label": "FTP-Patator",
+          "pool": "query",
+          "n": 3802
+        },
+        {
+          "partition": "Val",
+          "label": "FTP-Patator",
+          "pool": "support",
+          "n": 3610
+        }
+      ]
+    },
+    {
+      "outer_fold": "round2",
+      "roles": {
+        "Train": [
+          "BENIGN",
+          "PortScan",
+          "DDoS",
+          "DoS"
+        ],
+        "Val": [
+          "BENIGN",
+          "SSH-Patator"
+        ],
+        "Test": [
+          "BENIGN",
+          "FTP-Patator"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 1584764,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 202163
+        },
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 199701
+        },
+        {
+          "partition": "Test",
+          "label": "FTP-Patator",
+          "pool": "query",
+          "n": 3647
+        },
+        {
+          "partition": "Test",
+          "label": "FTP-Patator",
+          "pool": "support",
+          "n": 3765
+        },
+        {
+          "partition": "Train",
+          "label": "BENIGN",
+          "pool": "training",
+          "n": 1223149
+        },
+        {
+          "partition": "Train",
+          "label": "DDoS",
+          "pool": "training",
+          "n": 104678
+        },
+        {
+          "partition": "Train",
+          "label": "DoS",
+          "pool": "training",
+          "n": 98257
+        },
+        {
+          "partition": "Train",
+          "label": "PortScan",
+          "pool": "training",
+          "n": 158680
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 200887
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 199799
+        },
+        {
+          "partition": "Val",
+          "label": "SSH-Patator",
+          "pool": "query",
+          "n": 2958
+        },
+        {
+          "partition": "Val",
+          "label": "SSH-Patator",
+          "pool": "support",
+          "n": 2802
+        }
+      ]
+    },
+    {
+      "outer_fold": "round3",
+      "roles": {
+        "Train": [
+          "BENIGN",
+          "PortScan",
+          "DDoS",
+          "FTP-Patator"
+        ],
+        "Val": [
+          "BENIGN",
+          "DoS"
+        ],
+        "Test": [
+          "BENIGN",
+          "SSH-Patator"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 1492813,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 200974
+        },
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 199467
+        },
+        {
+          "partition": "Test",
+          "label": "SSH-Patator",
+          "pool": "query",
+          "n": 2854
+        },
+        {
+          "partition": "Test",
+          "label": "SSH-Patator",
+          "pool": "support",
+          "n": 2906
+        },
+        {
+          "partition": "Train",
+          "label": "BENIGN",
+          "pool": "training",
+          "n": 1222043
+        },
+        {
+          "partition": "Train",
+          "label": "DDoS",
+          "pool": "training",
+          "n": 104678
+        },
+        {
+          "partition": "Train",
+          "label": "FTP-Patator",
+          "pool": "training",
+          "n": 7412
+        },
+        {
+          "partition": "Train",
+          "label": "PortScan",
+          "pool": "training",
+          "n": 158680
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 200785
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 202430
+        },
+        {
+          "partition": "Val",
+          "label": "DoS",
+          "pool": "query",
+          "n": 49203
+        },
+        {
+          "partition": "Val",
+          "label": "DoS",
+          "pool": "support",
+          "n": 49054
+        }
+      ]
+    },
+    {
+      "outer_fold": "round4",
+      "roles": {
+        "Train": [
+          "BENIGN",
+          "DDoS",
+          "FTP-Patator",
+          "SSH-Patator"
+        ],
+        "Val": [
+          "BENIGN",
+          "PortScan"
+        ],
+        "Test": [
+          "BENIGN",
+          "DoS"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 1339043,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 201535
+        },
+        {
+          "partition": "Test",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 201435
+        },
+        {
+          "partition": "Test",
+          "label": "DoS",
+          "pool": "query",
+          "n": 49237
+        },
+        {
+          "partition": "Test",
+          "label": "DoS",
+          "pool": "support",
+          "n": 49020
+        },
+        {
+          "partition": "Train",
+          "label": "BENIGN",
+          "pool": "training",
+          "n": 1221862
+        },
+        {
+          "partition": "Train",
+          "label": "DDoS",
+          "pool": "training",
+          "n": 104009
+        },
+        {
+          "partition": "Train",
+          "label": "FTP-Patator",
+          "pool": "training",
+          "n": 7412
+        },
+        {
+          "partition": "Train",
+          "label": "SSH-Patator",
+          "pool": "training",
+          "n": 5760
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "query",
+          "n": 200056
+        },
+        {
+          "partition": "Val",
+          "label": "BENIGN",
+          "pool": "support",
+          "n": 200687
+        },
+        {
+          "partition": "Val",
+          "label": "PortScan",
+          "pool": "query",
+          "n": 79268
+        },
+        {
+          "partition": "Val",
+          "label": "PortScan",
+          "pool": "support",
+          "n": 79087
+        }
+      ]
+    }
+  ],
+  "training_episode_and_model_selection_audit": "NOT_EXECUTED; no training started; common budgets/configs required before training",
+  "limitations": [
+    "observed connections, not authenticated complete application sessions",
+    "capture/host independence not claimed",
+    "group-count ratios do not imply exact sample ratios"
+  ]
+}

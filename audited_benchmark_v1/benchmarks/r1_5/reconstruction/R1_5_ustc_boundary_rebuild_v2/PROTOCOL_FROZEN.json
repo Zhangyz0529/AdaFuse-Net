@@ -1,0 +1,17 @@
+{
+  "version": "ustc_boundary_scope_v2",
+  "frozen_at": 1794920834.4114633,
+  "reason": "Six original captures have index0 cap4 wire60 zero data; old global-block reports preserved",
+  "policy": "only exact leading-record exception; reject boundary-tainted sessions; no restored-wire completeness claim",
+  "code_sha256": {
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/audit_roles.py": "949bade6bef3dd88af0398c21c60d49acadbf4b2304be1375991b24d990b8b58",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/run.py": "694b5b9be28da85078a387f5dcc8dbf349d4e48b060699cd264b716ea3c834ac",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/test_boundary.py": "8b5c537bb9066b0a88d0a0c4511efd1aa7c88840e4073ac75cb72ae00b1cc21b",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/packet_rebuild.py": "b925dff101f1ad0a6820081a8473cc241e9719b550e0130d5c0f63d7fef213d1",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_ustc_boundary_rebuild_v2/USTC_SOURCE_PLAN.json": "0a83d4abd3721b97a7b6e3ccb4fc40455f03e5875ea0bd7cf7158175c1602d62",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/prepare.py": "39da10c5416a97d7bc20f405883603344596e57dee2bb82291d03cea2540b4d9",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/role_assignment.py": "a500a9f0339f908eb5d6c483fd5c3f470a2c7ba2e479d4dc215b2bc863c4019d",
+    "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/common.py": "71762af140076364055061d36c959fdb975ceb51f457e4b33ca051434f382264"
+  },
+  "training_allowed": false
+}

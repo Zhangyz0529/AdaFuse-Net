@@ -1,0 +1,1755 @@
+{
+  "dataset": "USTC",
+  "status": "PASS_PARTITIONS_AND_EVALUATION_POOLS",
+  "policy": {
+    "version": "task_role_v1",
+    "amendment": "source-count feasibility, before any model training; preserve old global-split failure reports",
+    "partition_assignment": "attack/target components assigned whole to their fold role; reference-only components use60/20/20; conflicting-role components all excluded",
+    "ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "split_seed": 42,
+    "pool_seed": 3407,
+    "episode_seed": 3407,
+    "minimum_samples_per_partition_class": 25,
+    "minimum_components_per_class": 2,
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "query_per_class": 15,
+    "evaluation_episodes_per_task_shot": 100,
+    "calibration_pool": "none; no calibration used; no fitted decision threshold in preparation",
+    "outer_tasks": "registry target Test; next target Val; remaining targets Train; dataset reference in all roles with disjoint groups",
+    "grouping": "session, conservative same-domain bidirectional tuple, exact model input, identical raw packet content, explicit uncertain-continuation edges",
+    "blocked_domains": "excluded by fixed source-evidence rule only; named in scope table; never by model score",
+    "no_seed_retries": true,
+    "training_allowed": false
+  },
+  "training_allowed": false,
+  "optuna_allowed": false,
+  "source_scope": [
+    {
+      "dataset": "USTC",
+      "family": "bittorrent",
+      "accepted": 7517,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 7517
+      },
+      "sessions_by_label": {
+        "Benign": 7517
+      },
+      "source_groups_by_label": {
+        "Benign": 7517
+      },
+      "flags": {
+        "one_or_two_packet_samples": 7517,
+        "missing_initial_syn": 7517
+      },
+      "packet_counts": {
+        "records": 15000,
+        "decoded": 15000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/BitTorrent.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/BitTorrent.pcap",
+            "label": "Benign",
+            "file_id": "13aa3c106258c14462aa142987c84accad836ff0ea9e6f49086fb0af2bdd8792",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/BitTorrent.pcap",
+            "original_sha256": "f4c4c59d460c6748110e6a0288c84a1362d7a3fa8a34b7a5cbe423de9e903deb",
+            "original_bytes": 7686388,
+            "sha256": "f4c4c59d460c6748110e6a0288c84a1362d7a3fa8a34b7a5cbe423de9e903deb",
+            "provenance_domain_id": "c46607e11983ffe42bbb52d0cedbd5a989cb74117a854647fd5aec6a070a18b5",
+            "records": 15000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "ftp",
+      "accepted": 101037,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 101037
+      },
+      "sessions_by_label": {
+        "Benign": 101037
+      },
+      "source_groups_by_label": {
+        "Benign": 101037
+      },
+      "flags": {
+        "one_or_two_packet_samples": 51148,
+        "missing_initial_syn": 76089
+      },
+      "packet_counts": {
+        "records": 360000,
+        "decoded": 360000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/FTP.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/FTP.pcap",
+            "label": "Benign",
+            "file_id": "6b3b96d07c00713c81e69acb0a0915ffe969266110b409dfdb4d020658bf1dad",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/FTP.pcap",
+            "original_sha256": "bccef78f0aaf26c3288094511b84b87717afa148bcff9203565d6049c8f3537e",
+            "original_bytes": 63166447,
+            "sha256": "bccef78f0aaf26c3288094511b84b87717afa148bcff9203565d6049c8f3537e",
+            "provenance_domain_id": "923e818ddc254603197cdb0d34338ffe7146264093ebebd0a53c26bebdee2178",
+            "records": 360000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "facetime",
+      "accepted": 6000,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 6000
+      },
+      "sessions_by_label": {
+        "Benign": 6000
+      },
+      "source_groups_by_label": {
+        "Benign": 6000
+      },
+      "flags": {
+        "one_or_two_packet_samples": 6000,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 6000,
+        "decoded": 6000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Facetime.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/Facetime.pcap",
+            "label": "Benign",
+            "file_id": "8cf73571197e6a7443adc8174fc7dd312687ad8f4a0b834d856cf8a8a988d95d",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Facetime.pcap",
+            "original_sha256": "b142bd39de652584521c1e5c0fa6d35630b69b27692e187b2b2aa14426bc699e",
+            "original_bytes": 2519073,
+            "sha256": "b142bd39de652584521c1e5c0fa6d35630b69b27692e187b2b2aa14426bc699e",
+            "provenance_domain_id": "3ca5e3be725a94ccf77371c814444b5c0f44813cb09ba898660d4cf086418bce",
+            "records": 6000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "gmail",
+      "accepted": 8629,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 8629
+      },
+      "sessions_by_label": {
+        "Benign": 8629
+      },
+      "source_groups_by_label": {
+        "Benign": 8629
+      },
+      "flags": {
+        "one_or_two_packet_samples": 4456,
+        "missing_initial_syn": 7990
+      },
+      "packet_counts": {
+        "records": 25000,
+        "decoded": 25000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Gmail.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/Gmail.pcap",
+            "label": "Benign",
+            "file_id": "1164b99e857f56d95d91a135e8b79ff2467fc03ff21331e175336452194f44fa",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Gmail.pcap",
+            "original_sha256": "6b10fa77c165de6d621842f9becb158d9630b0c913ddf6df2f943a839b142d17",
+            "original_bytes": 9497320,
+            "sha256": "6b10fa77c165de6d621842f9becb158d9630b0c913ddf6df2f943a839b142d17",
+            "provenance_domain_id": "051f127d41ae58d765da8e81e44f603e0a819fddb06b8dbbebe86fa772e5a1ad",
+            "records": 25000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "mysql",
+      "accepted": 86089,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 86089
+      },
+      "sessions_by_label": {
+        "Benign": 86089
+      },
+      "source_groups_by_label": {
+        "Benign": 86089
+      },
+      "flags": {
+        "one_or_two_packet_samples": 72114,
+        "missing_initial_syn": 72167
+      },
+      "packet_counts": {
+        "records": 200000,
+        "decoded": 200000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/MySQL.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/MySQL.pcap",
+            "label": "Benign",
+            "file_id": "878e6652bd59bc1ed080895219b7534414981bf066bbfc10b2d34d4b87075e19",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/MySQL.pcap",
+            "original_sha256": "fa5eda45d90a9c5835d9193d2708cac2a7380722be464bf961efe7b32f861b99",
+            "original_bytes": 23450490,
+            "sha256": "fa5eda45d90a9c5835d9193d2708cac2a7380722be464bf961efe7b32f861b99",
+            "provenance_domain_id": "41148a692f80434fd1c6aca5cb3e9113e58049e9460a77f0909026845ae51ef4",
+            "records": 200000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "outlook",
+      "accepted": 7524,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 7524
+      },
+      "sessions_by_label": {
+        "Benign": 7524
+      },
+      "source_groups_by_label": {
+        "Benign": 7524
+      },
+      "flags": {
+        "one_or_two_packet_samples": 7510,
+        "missing_initial_syn": 7513
+      },
+      "packet_counts": {
+        "records": 15000,
+        "decoded": 15000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Outlook.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/Outlook.pcap",
+            "label": "Benign",
+            "file_id": "2aeba7b75176ac354b6139714a50d7c2304c920f1d0ddca3f9cfe06f0d0002ab",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Outlook.pcap",
+            "original_sha256": "4b6e69fe3c43e5277576491097429cb84b742764c9a1bdf463f0ef6c3377300d",
+            "original_bytes": 11711492,
+            "sha256": "4b6e69fe3c43e5277576491097429cb84b742764c9a1bdf463f0ef6c3377300d",
+            "provenance_domain_id": "5611f56f1d5f05a0741248c738cece5fd439ea2ab66bb9d1c4dd4a8c1a089183",
+            "records": 15000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "smb",
+      "accepted": 38937,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 38937
+      },
+      "sessions_by_label": {
+        "Benign": 38937
+      },
+      "source_groups_by_label": {
+        "Benign": 38937
+      },
+      "flags": {
+        "one_or_two_packet_samples": 6305,
+        "missing_initial_syn": 38720
+      },
+      "packet_counts": {
+        "records": 925453,
+        "decoded": 925452,
+        "rejected": 1,
+        "reasons": {
+          "non_IP_frame": 1
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/SMB.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/SMB.pcap",
+            "label": "Benign",
+            "file_id": "8c51a4e213b5522341c3c81de809cb1eaf0b30f47748e51e94af2e10a3181f72",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/SMB.pcap",
+            "original_sha256": "0516a9c443397950e08e093bfbfbc94c85cd4876e5e54b15769b5667413b9f18",
+            "original_bytes": 1301052008,
+            "sha256": "0516a9c443397950e08e093bfbfbc94c85cd4876e5e54b15769b5667413b9f18",
+            "provenance_domain_id": "c274db24e430aa5efbbc4b825db450542b58df5c9030e7aba451ec5dac38e846",
+            "records": 925453
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "skype",
+      "accepted": 6321,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 6321
+      },
+      "sessions_by_label": {
+        "Benign": 6321
+      },
+      "source_groups_by_label": {
+        "Benign": 6321
+      },
+      "flags": {
+        "one_or_two_packet_samples": 6321,
+        "missing_initial_syn": 6321
+      },
+      "packet_counts": {
+        "records": 12000,
+        "decoded": 12000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Skype.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/Skype.pcap",
+            "label": "Benign",
+            "file_id": "0d16202a0b3ddb2624efdbbcdd020424b9835db5a08ee22b086be93c33f63fe0",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Skype.pcap",
+            "original_sha256": "30890a6c74f748d224b5fd1504bebc4e4103e5848d2fcb2acd4dc08ca3c2f761",
+            "original_bytes": 4433982,
+            "sha256": "30890a6c74f748d224b5fd1504bebc4e4103e5848d2fcb2acd4dc08ca3c2f761",
+            "provenance_domain_id": "987c59e1ad6cde1ace4871f31c2eb70deecff859678c962c9966ab22fb3c0a60",
+            "records": 12000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "weibo",
+      "accepted": 39950,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 39950
+      },
+      "sessions_by_label": {
+        "Benign": 39950
+      },
+      "source_groups_by_label": {
+        "Benign": 39950
+      },
+      "flags": {
+        "one_or_two_packet_samples": 144,
+        "missing_initial_syn": 39949
+      },
+      "packet_counts": {
+        "records": 1210060,
+        "decoded": 1210059,
+        "rejected": 1,
+        "reasons": {
+          "non_IP_frame": 1
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Weibo.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/Weibo.pcap",
+            "label": "Benign",
+            "file_id": "6dc8fd5a4c195a0b08d07ff055379db156556c9c6928e13de610ec15b54933fb",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/Weibo.pcap",
+            "original_sha256": "5e10513e4761135116f1579826a9be19ba2a06ce08e9557b7d687127bd229b2b",
+            "original_bytes": 1734400327,
+            "sha256": "5e10513e4761135116f1579826a9be19ba2a06ce08e9557b7d687127bd229b2b",
+            "provenance_domain_id": "9616d940c637bdf1ca5f9013f49f644e878516ba8f9fadb9c9d6f8cd3fbd253b",
+            "records": 1210060
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "worldofwarcraft",
+      "accepted": 7883,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Benign": 7883
+      },
+      "sessions_by_label": {
+        "Benign": 7883
+      },
+      "source_groups_by_label": {
+        "Benign": 7883
+      },
+      "flags": {
+        "one_or_two_packet_samples": 9,
+        "missing_initial_syn": 83
+      },
+      "packet_counts": {
+        "records": 140000,
+        "decoded": 140000,
+        "rejected": 0,
+        "reasons": {},
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/WorldOfWarcraft.pcap",
+            "relative_path": "USTC-TFC2016-master/Benign/WorldOfWarcraft.pcap",
+            "label": "Benign",
+            "file_id": "4549f0ef0d66ee0d2afbfad3d8a2096f261275cf39044e23a3a33788995bc3fe",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Benign/WorldOfWarcraft.pcap",
+            "original_sha256": "64eede78604b245f9ef842295dd5963884d2c39e1a04f90cd3c5ffadc552d06f",
+            "original_bytes": 15631895,
+            "sha256": "64eede78604b245f9ef842295dd5963884d2c39e1a04f90cd3c5ffadc552d06f",
+            "provenance_domain_id": "236d4f0610550c8cf3bac8c487dd7d21dd050dd32e1c3de44986c8a4ee694b1d",
+            "records": 140000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "cridex",
+      "accepted": 63330,
+      "rejected_observed_sessions": 4,
+      "by_label": {
+        "Cridex": 63330
+      },
+      "sessions_by_label": {
+        "Cridex": 63330
+      },
+      "source_groups_by_label": {
+        "Cridex": 16383
+      },
+      "flags": {
+        "one_or_two_packet_samples": 1645,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 461548,
+        "decoded": 461446,
+        "rejected": 102,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 95,
+          "non_TCP_UDP": 6
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Cridex.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Cridex.pcap",
+            "label": "Cridex",
+            "file_id": "d3241a87ab62cafccaaa8b12952a6a5a296a782c0c894d9de044629d5aea91de",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Cridex.pcap",
+            "original_sha256": "b5bfc716b7f875b8c4cd749874850c672b2b4f12b101b2016622a1cc0eb94da1",
+            "original_bytes": 99353677,
+            "sha256": "b5bfc716b7f875b8c4cd749874850c672b2b4f12b101b2016622a1cc0eb94da1",
+            "provenance_domain_id": "4694b63b28dcd85a122d3e37d5f1f0a18a776a9dd5ddf9f1bd4c97e1cf561fef",
+            "records": 461548
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "d3241a87ab62cafccaaa8b12952a6a5a296a782c0c894d9de044629d5aea91de",
+            "packet_index": 0,
+            "ts": 1.5e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/cridex/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "geodo",
+      "accepted": 56886,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Geodo": 56886
+      },
+      "sessions_by_label": {
+        "Geodo": 56886
+      },
+      "source_groups_by_label": {
+        "Geodo": 40947
+      },
+      "flags": {
+        "one_or_two_packet_samples": 11031,
+        "missing_initial_syn": 2601
+      },
+      "packet_counts": {
+        "records": 250000,
+        "decoded": 213227,
+        "rejected": 36773,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 36761,
+          "non_TCP_UDP": 11
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Geodo.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Geodo.pcap",
+            "label": "Geodo",
+            "file_id": "9a3cc52ba16fcb9837b1ab90d8ad6e07b71529700b2acd15c8df3968a9205d57",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Geodo.pcap",
+            "original_sha256": "448fdf2fe393dce570a694bc70e0147c9c3a8877e9abd28ab306c401d6f200a4",
+            "original_bytes": 30271627,
+            "sha256": "448fdf2fe393dce570a694bc70e0147c9c3a8877e9abd28ab306c401d6f200a4",
+            "provenance_domain_id": "52a7618229c68d0c4bb2ff4f8f56b91d5d2c197317fd358d8c2d742bb308469a",
+            "records": 250000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "9a3cc52ba16fcb9837b1ab90d8ad6e07b71529700b2acd15c8df3968a9205d57",
+            "packet_index": 0,
+            "ts": 2e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/geodo/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "htbot",
+      "accepted": 8867,
+      "rejected_observed_sessions": 4,
+      "by_label": {
+        "Htbot": 8867
+      },
+      "sessions_by_label": {
+        "Htbot": 8867
+      },
+      "source_groups_by_label": {
+        "Htbot": 6364
+      },
+      "flags": {
+        "one_or_two_packet_samples": 3255,
+        "missing_initial_syn": 870
+      },
+      "packet_counts": {
+        "records": 171569,
+        "decoded": 169212,
+        "rejected": 2357,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 2197,
+          "non_TCP_UDP": 159
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Htbot.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Htbot.pcap",
+            "label": "Htbot",
+            "file_id": "bd575f6d15b9a3204e7fdd042c4e22a959f6511b4c0b599b4d8d9510232ef217",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Htbot.pcap",
+            "original_sha256": "cf6b9a726cd3dcb1518ffceb0568961ac0e813efa26bd6aaad0beadb0cf912c4",
+            "original_bytes": 87674586,
+            "sha256": "cf6b9a726cd3dcb1518ffceb0568961ac0e813efa26bd6aaad0beadb0cf912c4",
+            "provenance_domain_id": "abb794301328c5cb9f81a965f26320912b02820415b917ed00edfe6bc281bc1b",
+            "records": 171569
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "bd575f6d15b9a3204e7fdd042c4e22a959f6511b4c0b599b4d8d9510232ef217",
+            "packet_index": 0,
+            "ts": 2.1e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/htbot/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "miuref",
+      "accepted": 15896,
+      "rejected_observed_sessions": 4,
+      "by_label": {
+        "Miuref": 15896
+      },
+      "sessions_by_label": {
+        "Miuref": 15896
+      },
+      "source_groups_by_label": {
+        "Miuref": 13478
+      },
+      "flags": {
+        "one_or_two_packet_samples": 1401,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 88560,
+        "decoded": 81175,
+        "rejected": 7385,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 7351,
+          "non_TCP_UDP": 33
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Miuref.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Miuref.pcap",
+            "label": "Miuref",
+            "file_id": "c33c742f8000eb7a275dd8c47e9df983f7054d20e59e74c350e79756f63aa4f5",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Miuref.pcap",
+            "original_sha256": "ec2476c9fb34a202b11d1138286143ad2cd7055fbc9401baf150b3d513c3d0ae",
+            "original_bytes": 17196739,
+            "sha256": "ec2476c9fb34a202b11d1138286143ad2cd7055fbc9401baf150b3d513c3d0ae",
+            "provenance_domain_id": "ed2cc0a2ac989574f7730b3bb92e10fbb24df80a929ea730dee7750fe8120356",
+            "records": 88560
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "c33c742f8000eb7a275dd8c47e9df983f7054d20e59e74c350e79756f63aa4f5",
+            "packet_index": 0,
+            "ts": 1.7e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/miuref/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "neris",
+      "accepted": 47169,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Neris": 47169
+      },
+      "sessions_by_label": {
+        "Neris": 47169
+      },
+      "source_groups_by_label": {
+        "Neris": 33791
+      },
+      "flags": {
+        "one_or_two_packet_samples": 7006,
+        "missing_initial_syn": 536
+      },
+      "packet_counts": {
+        "records": 499218,
+        "decoded": 496978,
+        "rejected": 2240,
+        "reasons": {
+          "non_IP_frame": 1361,
+          "non_TCP_UDP": 879
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Neris.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Neris.pcap",
+            "label": "Neris",
+            "file_id": "9f2052849df9c04f8c4136653b24082fc00df4c478e953ece0a911aa7c8c661d",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Neris.pcap",
+            "original_sha256": "a80f5e312cb9485096c4c759a5cc827cd5bd5d813b002392350635871b66dd3b",
+            "original_bytes": 94527961,
+            "sha256": "a80f5e312cb9485096c4c759a5cc827cd5bd5d813b002392350635871b66dd3b",
+            "provenance_domain_id": "899a7603fcf2e6dbcaab2e0c43a881cd24df7a278525fc52f5c29ec1b53db13f",
+            "records": 499218
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "nsis-ay",
+      "accepted": 8280,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Nsis-ay": 8280
+      },
+      "sessions_by_label": {
+        "Nsis-ay": 8280
+      },
+      "source_groups_by_label": {
+        "Nsis-ay": 6069
+      },
+      "flags": {
+        "one_or_two_packet_samples": 800,
+        "missing_initial_syn": 35
+      },
+      "packet_counts": {
+        "records": 352266,
+        "decoded": 351229,
+        "rejected": 1037,
+        "reasons": {
+          "non_IP_frame": 729,
+          "non_TCP_UDP": 308
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Nsis-ay.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Nsis-ay.pcap",
+            "label": "Nsis-ay",
+            "file_id": "945ddddcd37773cfbc14b3d943620b69f9280692a745efc07d66479616981094",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Nsis-ay.pcap",
+            "original_sha256": "4c66deefb4530435c0c90de186c9350fa8b1ab8c3b8e6606c493e971796eaa9c",
+            "original_bytes": 294902378,
+            "sha256": "4c66deefb4530435c0c90de186c9350fa8b1ab8c3b8e6606c493e971796eaa9c",
+            "provenance_domain_id": "86b5aa137d9c4e9766670f8106327a56615e5370e7ff87c83975fc1bece0a37a",
+            "records": 352266
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "shifu",
+      "accepted": 11296,
+      "rejected_observed_sessions": 4,
+      "by_label": {
+        "Shifu": 11296
+      },
+      "sessions_by_label": {
+        "Shifu": 11296
+      },
+      "source_groups_by_label": {
+        "Shifu": 9633
+      },
+      "flags": {
+        "one_or_two_packet_samples": 5515,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 500000,
+        "decoded": 258871,
+        "rejected": 241129,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 222,
+          "non_TCP_UDP": 240906
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Shifu.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Shifu.pcap",
+            "label": "Shifu",
+            "file_id": "17e27996a4f5044240699fd604ed8e5c8058c9bec1ecd47800b88cec9aca695e",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Shifu.pcap",
+            "original_sha256": "c645adb19ecbba73f4b0596b1b877e49b1fe08b13670b98662cb68108dbcef44",
+            "original_bytes": 60753746,
+            "sha256": "c645adb19ecbba73f4b0596b1b877e49b1fe08b13670b98662cb68108dbcef44",
+            "provenance_domain_id": "78b5111396ffb29a39026137f31c1f3f3f3f541267064b0fd8d1ac3210334e24",
+            "records": 500000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "17e27996a4f5044240699fd604ed8e5c8058c9bec1ecd47800b88cec9aca695e",
+            "packet_index": 0,
+            "ts": 1.5e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/shifu/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "tinba",
+      "accepted": 10738,
+      "rejected_observed_sessions": 4,
+      "by_label": {
+        "Tinba": 10738
+      },
+      "sessions_by_label": {
+        "Tinba": 10738
+      },
+      "source_groups_by_label": {
+        "Tinba": 8502
+      },
+      "flags": {
+        "one_or_two_packet_samples": 10554,
+        "missing_initial_syn": 0
+      },
+      "packet_counts": {
+        "records": 22000,
+        "decoded": 20420,
+        "rejected": 1580,
+        "reasons": {
+          "truncated_ethernet": 1,
+          "non_IP_frame": 87,
+          "non_TCP_UDP": 1492
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Tinba.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Tinba.pcap",
+            "label": "Tinba",
+            "file_id": "e291b1eaaf644f85317b6ad5aad3ab1795fb65320de3aa86889909d3c7d14d67",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Tinba.pcap",
+            "original_sha256": "fd893402b392188a4c2a79055776e03def1b7f3ac528397464b93fa848bf9670",
+            "original_bytes": 2680243,
+            "sha256": "fd893402b392188a4c2a79055776e03def1b7f3ac528397464b93fa848bf9670",
+            "provenance_domain_id": "0483a91adf859ac31d96c0ee1081ee651dd11e059216b73c00881fc34125e4b2",
+            "records": 22000
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true,
+        "leading_boundaries": [
+          {
+            "file_id": "e291b1eaaf644f85317b6ad5aad3ab1795fb65320de3aa86889909d3c7d14d67",
+            "packet_index": 0,
+            "ts": 2e-05,
+            "caplen": 4,
+            "wirelen": 60,
+            "available_records_begin_byte": 44,
+            "reason": "unassignable leading observation; not restored"
+          }
+        ],
+        "reused_complete_index": {
+          "source": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_remaining_datasets_rebuild_v1/outputs/USTC/tinba/packets.sqlite",
+          "read_only_backup": true,
+          "reason": "identical decoder and all valid packet records; only boundary-scope policy amended"
+        }
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "virut",
+      "accepted": 80656,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Virut": 80656
+      },
+      "sessions_by_label": {
+        "Virut": 80656
+      },
+      "source_groups_by_label": {
+        "Virut": 33103
+      },
+      "flags": {
+        "one_or_two_packet_samples": 333,
+        "missing_initial_syn": 105
+      },
+      "packet_counts": {
+        "records": 440625,
+        "decoded": 437227,
+        "rejected": 3398,
+        "reasons": {
+          "non_IP_frame": 3076,
+          "non_TCP_UDP": 322
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Virut.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Virut.pcap",
+            "label": "Virut",
+            "file_id": "c17edff97177be3451cef6c5c29059ae47875ef2c4d0e4398630fe65ecdb3cb9",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Virut.pcap",
+            "original_sha256": "b04dfbdcb5735e64f64ea28ba801912c55395efca1c69ab0ac5c2672ebfd372a",
+            "original_bytes": 114572014,
+            "sha256": "b04dfbdcb5735e64f64ea28ba801912c55395efca1c69ab0ac5c2672ebfd372a",
+            "provenance_domain_id": "1b82cb71b3fe74120f30c3b5bd7c1b4fd3d33ee4cdd5a65535d217b070cee337",
+            "records": 440625
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    },
+    {
+      "dataset": "USTC",
+      "family": "zeus",
+      "accepted": 22075,
+      "rejected_observed_sessions": 0,
+      "by_label": {
+        "Zeus": 22075
+      },
+      "sessions_by_label": {
+        "Zeus": 22075
+      },
+      "source_groups_by_label": {
+        "Zeus": 10970
+      },
+      "flags": {
+        "one_or_two_packet_samples": 77,
+        "missing_initial_syn": 300
+      },
+      "packet_counts": {
+        "records": 93141,
+        "decoded": 86190,
+        "rejected": 6951,
+        "reasons": {
+          "non_IP_frame": 6943,
+          "non_TCP_UDP": 8
+        },
+        "sources": [
+          {
+            "path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Zeus.pcap",
+            "relative_path": "USTC-TFC2016-master/Malware/Zeus.pcap",
+            "label": "Zeus",
+            "file_id": "f85b71254530c7d089072464e8bd2408c09a31ce8ec4cd9b3c6090037fc88657",
+            "original_path": "/home/zzu/zyz_workspace/TNSM/data/USTC-TFC2016-master/Malware/Zeus.pcap",
+            "original_sha256": "d38e6cd7e9e063afe5696fd6a605350b57cc430ac21b32acbec7af70ec45d414",
+            "original_bytes": 14094482,
+            "sha256": "d38e6cd7e9e063afe5696fd6a605350b57cc430ac21b32acbec7af70ec45d414",
+            "provenance_domain_id": "683f2c3e277298ef052a6f4b6e94f261b25c4c27a92be8584be17f28b5702c0b",
+            "records": 93141
+          }
+        ],
+        "global_errors": [],
+        "counts_close": true
+      },
+      "session_counts_close": true,
+      "counts_close": true,
+      "status": "RECONSTRUCTED_UNSPLIT",
+      "training_allowed": false
+    }
+  ],
+  "before_conflict_samples": 635080,
+  "cross_label_hash_groups": 1147,
+  "excluded_conflict_records": 2295,
+  "retained": 461325,
+  "uncertain_continuation_edges": 4407,
+  "class_groups": [
+    {
+      "label": "Benign",
+      "samples": 309887,
+      "observed_sessions": 309887,
+      "source_groups": 309887,
+      "components": 309887
+    },
+    {
+      "label": "Htbot",
+      "samples": 8867,
+      "observed_sessions": 8867,
+      "source_groups": 6364,
+      "components": 6364
+    },
+    {
+      "label": "Miuref",
+      "samples": 14753,
+      "observed_sessions": 14753,
+      "source_groups": 13478,
+      "components": 13478
+    },
+    {
+      "label": "Neris",
+      "samples": 47166,
+      "observed_sessions": 47166,
+      "source_groups": 33791,
+      "components": 33791
+    },
+    {
+      "label": "Virut",
+      "samples": 80652,
+      "observed_sessions": 80652,
+      "source_groups": 33103,
+      "components": 33103
+    }
+  ],
+  "folds": [
+    {
+      "outer_fold": "round0",
+      "roles": {
+        "Train": [
+          "Benign",
+          "Miuref",
+          "Virut"
+        ],
+        "Val": [
+          "Benign",
+          "Neris"
+        ],
+        "Test": [
+          "Benign",
+          "Htbot"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 281337,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "query",
+          "n": 31009
+        },
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "support",
+          "n": 30969
+        },
+        {
+          "partition": "Test",
+          "label": "Htbot",
+          "pool": "query",
+          "n": 5346
+        },
+        {
+          "partition": "Test",
+          "label": "Htbot",
+          "pool": "support",
+          "n": 3521
+        },
+        {
+          "partition": "Train",
+          "label": "Benign",
+          "pool": "training",
+          "n": 185932
+        },
+        {
+          "partition": "Train",
+          "label": "Miuref",
+          "pool": "training",
+          "n": 14753
+        },
+        {
+          "partition": "Train",
+          "label": "Virut",
+          "pool": "training",
+          "n": 80652
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30960
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "support",
+          "n": 31017
+        },
+        {
+          "partition": "Val",
+          "label": "Neris",
+          "pool": "query",
+          "n": 23804
+        },
+        {
+          "partition": "Val",
+          "label": "Neris",
+          "pool": "support",
+          "n": 23362
+        }
+      ]
+    },
+    {
+      "outer_fold": "round1",
+      "roles": {
+        "Train": [
+          "Benign",
+          "Htbot",
+          "Virut"
+        ],
+        "Val": [
+          "Benign",
+          "Miuref"
+        ],
+        "Test": [
+          "Benign",
+          "Neris"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 275451,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "query",
+          "n": 31025
+        },
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "support",
+          "n": 30953
+        },
+        {
+          "partition": "Test",
+          "label": "Neris",
+          "pool": "query",
+          "n": 23345
+        },
+        {
+          "partition": "Test",
+          "label": "Neris",
+          "pool": "support",
+          "n": 23821
+        },
+        {
+          "partition": "Train",
+          "label": "Benign",
+          "pool": "training",
+          "n": 185932
+        },
+        {
+          "partition": "Train",
+          "label": "Htbot",
+          "pool": "training",
+          "n": 8867
+        },
+        {
+          "partition": "Train",
+          "label": "Virut",
+          "pool": "training",
+          "n": 80652
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30985
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "support",
+          "n": 30992
+        },
+        {
+          "partition": "Val",
+          "label": "Miuref",
+          "pool": "query",
+          "n": 6743
+        },
+        {
+          "partition": "Val",
+          "label": "Miuref",
+          "pool": "support",
+          "n": 8010
+        }
+      ]
+    },
+    {
+      "outer_fold": "round2",
+      "roles": {
+        "Train": [
+          "Benign",
+          "Htbot",
+          "Neris"
+        ],
+        "Val": [
+          "Benign",
+          "Virut"
+        ],
+        "Test": [
+          "Benign",
+          "Miuref"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 241965,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30939
+        },
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "support",
+          "n": 31039
+        },
+        {
+          "partition": "Test",
+          "label": "Miuref",
+          "pool": "query",
+          "n": 8064
+        },
+        {
+          "partition": "Test",
+          "label": "Miuref",
+          "pool": "support",
+          "n": 6689
+        },
+        {
+          "partition": "Train",
+          "label": "Benign",
+          "pool": "training",
+          "n": 185932
+        },
+        {
+          "partition": "Train",
+          "label": "Htbot",
+          "pool": "training",
+          "n": 8867
+        },
+        {
+          "partition": "Train",
+          "label": "Neris",
+          "pool": "training",
+          "n": 47166
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30936
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "support",
+          "n": 31041
+        },
+        {
+          "partition": "Val",
+          "label": "Virut",
+          "pool": "query",
+          "n": 40630
+        },
+        {
+          "partition": "Val",
+          "label": "Virut",
+          "pool": "support",
+          "n": 40022
+        }
+      ]
+    },
+    {
+      "outer_fold": "round3",
+      "roles": {
+        "Train": [
+          "Benign",
+          "Neris",
+          "Miuref"
+        ],
+        "Val": [
+          "Benign",
+          "Htbot"
+        ],
+        "Test": [
+          "Benign",
+          "Virut"
+        ]
+      },
+      "partition_pairs": [
+        {
+          "partitions": [
+            "Train",
+            "Val"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Train",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        },
+        {
+          "partitions": [
+            "Val",
+            "Test"
+          ],
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          }
+        }
+      ],
+      "pool_pairs": [
+        {
+          "partition": "Val",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        },
+        {
+          "partition": "Test",
+          "intersections": {
+            "sample_id": 0,
+            "session_id": 0,
+            "source_group_id": 0,
+            "split_group_id": 0,
+            "content_hash": 0,
+            "raw_record_hash": 0
+          },
+          "calibration_count": 0
+        }
+      ],
+      "scaler_fit_partition": "Train",
+      "scaler_fit_n": 247851,
+      "counts": [
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30968
+        },
+        {
+          "partition": "Test",
+          "label": "Benign",
+          "pool": "support",
+          "n": 31010
+        },
+        {
+          "partition": "Test",
+          "label": "Virut",
+          "pool": "query",
+          "n": 40189
+        },
+        {
+          "partition": "Test",
+          "label": "Virut",
+          "pool": "support",
+          "n": 40463
+        },
+        {
+          "partition": "Train",
+          "label": "Benign",
+          "pool": "training",
+          "n": 185932
+        },
+        {
+          "partition": "Train",
+          "label": "Miuref",
+          "pool": "training",
+          "n": 14753
+        },
+        {
+          "partition": "Train",
+          "label": "Neris",
+          "pool": "training",
+          "n": 47166
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "query",
+          "n": 30978
+        },
+        {
+          "partition": "Val",
+          "label": "Benign",
+          "pool": "support",
+          "n": 30999
+        },
+        {
+          "partition": "Val",
+          "label": "Htbot",
+          "pool": "query",
+          "n": 5186
+        },
+        {
+          "partition": "Val",
+          "label": "Htbot",
+          "pool": "support",
+          "n": 3681
+        }
+      ]
+    }
+  ],
+  "training_episode_and_model_selection_audit": "NOT_EXECUTED; no training started; common budgets/configs required before training",
+  "limitations": [
+    "observed connections, not authenticated complete application sessions",
+    "capture/host independence not claimed",
+    "group-count ratios do not imply exact sample ratios"
+  ]
+}

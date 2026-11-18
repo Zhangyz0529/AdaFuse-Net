@@ -1,0 +1,8 @@
+{
+  "time": 1794930077.8719022,
+  "reason": "formal1shot seed42 training nonfinite after25 updates despite short smoke success",
+  "retired_version": "native_common_input_fewshot_v3",
+  "new_gate": "V4 float64+native clip_value2 must pass100 native outer updates and paired evaluation before formal scheduling",
+  "test_results_not_used_to_select_fix": true,
+  "all_previous_failures_retained": true
+}

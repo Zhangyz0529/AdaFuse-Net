@@ -1,0 +1,6 @@
+shots: [1, 3, 5, 10]
+query_per_class: 15
+episodes_per_task: 100
+episode_seed: 42
+normal_split_ratios: [0.6, 0.2, 0.2]
+session_independence_certified: false

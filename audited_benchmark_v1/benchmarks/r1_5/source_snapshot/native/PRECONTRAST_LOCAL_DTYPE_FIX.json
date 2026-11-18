@@ -1,0 +1,8 @@
+{
+  "time": 1794931013.1437669,
+  "failure": "uint8 clamp upper bound 256 overflows torch uint8",
+  "fix": "Convert sequence to int64 before unchanged original encoder; byte values unchanged",
+  "protocol_sha256_after_fix": "c979913ad2b0304b8cef974b4bdd5e6dd556eefdb42f5e68aea3f00bafedad84",
+  "smoke_complete": true,
+  "prior_freeze_retained": true
+}

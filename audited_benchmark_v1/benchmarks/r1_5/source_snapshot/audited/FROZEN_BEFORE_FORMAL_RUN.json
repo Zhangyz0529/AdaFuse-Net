@@ -1,0 +1,11 @@
+{
+  "time": 1794924510.3769925,
+  "protocol_sha256": "36e35023459bf323dc1408c000c9d233b04fa723545f12b9b54b06b939c2304e",
+  "code_manifest_sha256": "5d87cbf2a0b3961d1923c09ee0f3794a405a9647f657c33495c626fef1be81a2",
+  "smoke_checked": [
+    "USTC_RF",
+    "USTC_AdaFuse_GPU1",
+    "ISCX_AdaFuse_GPU0"
+  ],
+  "formal_test_not_evaluated": true
+}

@@ -1,0 +1,14 @@
+{
+  "pid": 1108438,
+  "start_time": 1794912611.6210284,
+  "previous_scheduler": {
+    "pid": 1099237,
+    "start_time": 1794911698.8679252,
+    "script_sha256": "4f9287c059b5920420982d13dc1cbe114b485503eb6ee61a4e6c96d5a52a48b8",
+    "additional_workers": 2
+  },
+  "script_sha256": "4566e2217b1ed671bc60a743985d7fa879c41c9dfa294877dafc4474d45b01cf",
+  "concurrent_source_domains": 4,
+  "scientific_protocol_unchanged": true,
+  "reason": "Use all four remaining independent source domains concurrently; preserve running workers"
+}

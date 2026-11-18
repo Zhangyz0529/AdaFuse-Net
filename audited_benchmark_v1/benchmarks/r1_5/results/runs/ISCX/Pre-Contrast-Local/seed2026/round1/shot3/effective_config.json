@@ -1,0 +1,70 @@
+{
+  "dataset": "ISCX",
+  "model": "Pre-Contrast-Local",
+  "implementation_version": "original_project_precontrast_local_v1",
+  "seed": 2026,
+  "fold": "round1",
+  "shot": 3,
+  "cache_attestation": {
+    "dataset": "ISCX",
+    "fold": "round1",
+    "records": 20896,
+    "source_root": "/home/zzu/zyz_workspace/TNSM/datasets/V_second_DSTA/R1_5_task_role_partitions_v1/partitions/ISCX",
+    "source_gate_sha256": "9cf5a92b217fb0be571baee897f28c260ce1c4f551459923ea29aef48e85667e",
+    "source_eval_sha256": "3133bebae63b4b98602ffbffa417227cce7157e1c580c50140373a233d19b279",
+    "training_plan_sha256": "2b694b0521213c4c3b16e134209f3231b8d493d716e52ad5aa12295da9959cca",
+    "stats_sha256": "2ece86401626d8f51094e54308faa15acb0e2b100d038f03895d49e7cbed6f77",
+    "sequence_sha256": "0eab6a8c844dd4e851ef3a57d8cf691bbe5e480376a23506ddd830d7127dce75",
+    "status": "EXACT_SOURCE_INPUTS_AND_PLANS"
+  },
+  "protocol": {
+    "version": "original_project_precontrast_local_v1",
+    "user_authorization": "Use original project code if author implementation unavailable; replaces prior skip",
+    "display_name": "Pre-Contrast-Local",
+    "source": "Abation_copy/compare/precontrast_baseline.py, universal_model.py, original supervised_contrastive_loss function",
+    "model": "unchanged original model/embed128, including original unused projection_head",
+    "training": "original support/query forward separately; original positive-count-scaled SupCon temperature0.07; Adam0.0005 weight_decay0; clip_norm1; fixed100updates last checkpoint",
+    "evaluation": "original nearest support-defined prototype/squared Euclidean softmax; same audited eval plans100episodes/class15query; Clean/IBP30",
+    "seeds": [
+      42,
+      3407,
+      2026,
+      123,
+      5678
+    ],
+    "shots": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "pretraining": "none, as in original project; NOT official Pre-Contrast or full original-paper reproduction",
+    "input_amendment": "audited reconstructed inputs/scalers; no legacy hardcoded first4-stat/54-byte mask because those are not identification columns of rebuilt inputs",
+    "historical_results": "not reused; new splits require new training; new tables distinguish Local version",
+    "unused_projection_head": "original get_projection was not called by original runner; retained unchanged, no claim projection training or author objective",
+    "smoke": "2updates plus paired Clean/IBP30 Val/Test2episodes, excluded from results",
+    "input_dtype_adapter": "Convert cached uint8 bytes to int64 before original encoder clamp(0,256); values unchanged."
+  },
+  "worker_sha256": "fad232a36ccc32e9be7151f91d38241918f7f0c1b0c4cb89615aa75332746f09",
+  "models_sha256": "4a3736f7a57ff045b013f33e920f4544be646e2dbfe39960d9b38bd950cadfcc",
+  "vendor_versions": {
+    "MetaTraffic": {
+      "commit": "8e1597bd1a5c0862d88b33ddf0ab7f2cccacd73b",
+      "origin": "https://github.com/FIND-Lab/MAML-Training-ETC.git"
+    },
+    "Open-Detect": {
+      "commit": "b50a18515a01799468c10f6c9b60c01f8a6a4e7c",
+      "origin": "https://github.com/niebikong/Open-Detect.git"
+    },
+    "FlowPic": {
+      "commit": "000927f707a204c868bbceb79cd621814bd98ad6",
+      "origin": "https://github.com/talshapira/FlowPic.git"
+    },
+    "TrafficFormer": {
+      "commit": "6d0ba64d82e74fb130c6c7301ef20885dbfbdf29",
+      "origin": "https://github.com/IDP-code/TrafficFormer.git"
+    }
+  },
+  "torch": "2.1.2+cu121",
+  "smoke": false
+}
